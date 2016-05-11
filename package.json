@@ -1,0 +1,36 @@
+{
+  "name": "ti3r.github.io",
+  "version": "1.0.0",
+  "description": "Personal site for ti3r using npm, jekyll and github pages. For educational purposes",
+  "main": "index.html",
+  "scripts": {
+    "build": "jekyll build",
+    "runserv": "npm run build && jekyll serve",
+    "stopserv": "pkill -f jekyll",
+    "clean": "jekyll clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ti3r/ti3r.github.io.git"
+  },
+  "keywords": [
+    "ti3r",
+    "jekyll",
+    "sample",
+    "bootstrap"
+  ],
+  "author": "Alexandro Blanco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ti3r/ti3r.github.io/issues"
+  },
+  "homepage": "https://github.com/ti3r/ti3r.github.io#readme",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.1"
+  },
+  "devDependencies": {
+    "rimraf": "latest"
+  }
+}

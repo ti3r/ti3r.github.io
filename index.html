@@ -1,1 +1,36 @@
-Hello World
+---
+layout: default
+---
+
+<div class="site-banner">
+    <div class="col-xs-5 line"><hr></div>
+    <div class="col-xs-2 logo">Logo</div>
+    <div class="col-xs-5 line"><hr></div>
+</div>
+
+
+<div class="home">
+
+  <h1 class="page-heading">Welcome to my personal space.</h1>
+  <p>This space was created to introduce myself and as a demonstration of the technologies that I can work with to create presence on the internet for individuals or businesses.</p>
+  <p>I have been a developer for almost 10 years now. And during that time I haved worked with several different technologies to create web sites, applications, web services and mobile applications. My primary focus has been Java development (for the enterprise, mostly backend) but I have had the oportunity to interact with several other web technologies and some andriod development.</p>
+
+  <p>Recently I have felt the need to start experimenting with some front-end technologies hence the creation of this website. I wanted to train myself in tools and techonologies like <a href="https://nodejs.org">Node</a>, <a href="https://www.npmjs.com/">npm</a>, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="http://www.w3schools.com/html/html5_intro.asp">HTML 5</a>, <a href="http://www.w3schools.com/css/css3_intro.asp">CSS 3</a>, <a href="http://www.w3schools.com/js/">JavaScript</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://sass-lang.com/">Sass</a>, etc. and I thought this would be a perfect way to do it.</p>
+
+  <p>If you feel like experimenting with projects like this, feel free to clone the repository and start changing whatever you need to fit your needs. As a good open source developer, I will give you anything that you want from this website for free. To know more about how this project was built checkout the <a href="{{"/README.md" | prepend: site.baseurl }}">README.md</a> file of the project.</p>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
