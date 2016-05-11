@@ -4,8 +4,6 @@ _site
 bower_components
 
 #include the node modules in the build so it can be checked in
-dist/*
-!dist/node_modules
 
 node_modules/*
 *sublime*
