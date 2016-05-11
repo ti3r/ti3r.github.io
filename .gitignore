@@ -2,12 +2,13 @@ _site
 .sass-cache
 .jekyll-metadata
 bower_components
+
 #include the node modules in the build so it can be checked in
+dist/*
 !dist/node_modules
-node_modules
-build
+
+node_modules/*
 *sublime*
 .DS_Store
-dist
 npm-debug.log
 
