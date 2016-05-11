@@ -8,7 +8,7 @@
     "runserv": "npm run build && jekyll serve",
     "stopserv": "pkill -f jekyll",
     "clean": "jekyll clean"
-    "deploy": "npm run gh-pages-deploy"
+    ,"deploy": "./node_modules/gh-pages-deploy/bin/gh-pages-deploy"
   },
   "repository": {
     "type": "git",
@@ -39,10 +39,11 @@
     "staticpath": "dist",
     "cname": "ti3r.org",
     "prep": [
+      "build"
     ],
     "post": [
       "clean"
     ],
     "noprompt": false
-  },
+  }
 }
