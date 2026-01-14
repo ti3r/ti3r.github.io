@@ -1,0 +1,58 @@
+# General ignores
+.DS_Store
+build
+out
+kotlin-js-store
+
+# Kobweb ignores
+.kobweb/build
+.kobweb/server
+site/.kobweb/build
+site/.kobweb/server
+
+# IntelliJ ignores
+*.iml
+/*.ipr
+/.idea
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/gradle.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/artifacts
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/*.iml
+/.idea/modules
+/.idea/libraries-with-intellij-classes.xml
+
+# Gradle ignores
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Kotlin ignores
+.kotlin
+
+# Vim/Emacs temp files
+*.swp
+*.swo
+*~
+.*.swp
+
+# Node modules (if using any JS tooling)
+node_modules/
+
+# Log files
+*.log
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# KSP generated files
+build/generated/
+build/kspCaches/

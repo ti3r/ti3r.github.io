@@ -1,0 +1,14 @@
+site:
+  title: "Alex CV"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/alexcv.js"
+      api: "build/libs/tmpkobweb.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/alexcv.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
