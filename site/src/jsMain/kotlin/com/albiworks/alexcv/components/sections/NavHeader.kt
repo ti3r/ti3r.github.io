@@ -1,6 +1,8 @@
 package com.albiworks.alexcv.components.sections
 
 import androidx.compose.runtime.*
+import com.albiworks.alexcv.Language
+import com.albiworks.alexcv.rememberLanguage
 import com.varabyte.kobweb.browser.dom.ElementTarget
 import com.varabyte.kobweb.compose.css.functions.clamp
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -67,6 +69,13 @@ private fun NavLink(path: String, text: String) {
 @Composable
 private fun DownloadMenu() {
     var showDropdown by remember { mutableStateOf(false) }
+    var showChallenge by remember { mutableStateOf(false) }
+    var challengeAnswer by remember { mutableStateOf("") }
+    var pendingDownload by remember { mutableStateOf("") }
+    val num1 = remember { (1..10).random() }
+    val num2 = remember { (1..10).random() }
+    val correctAnswer = num1 + num2
+    val language by rememberLanguage()
     
     Column(Modifier.position(Position.Relative)) {
         SpanText(
@@ -88,24 +97,117 @@ private fun DownloadMenu() {
                     .minWidth(120.px)
                     .zIndex(1000)
             ) {
-                Link(
-                    "/resume.pdf",
+                SpanText(
                     "PDF",
                     Modifier
                         .padding(0.5.cssRem)
                         .fillMaxWidth()
-                        .onClick { showDropdown = false },
-                    variant = UndecoratedLinkVariant.then(UncoloredLinkVariant)
+                        .cursor(Cursor.Pointer)
+                        .onClick { 
+                            pendingDownload = if (language == Language.ENGLISH) {
+                                "/AlexandroBlanco-Resume.pdf"
+                            } else {
+                                "/AlexandroBlanco-Resume-ES.pdf"
+                            }
+                            showChallenge = true
+                            showDropdown = false
+                        }
                 )
-                Link(
-                    "/resume.md",
+                SpanText(
                     "Markdown",
                     Modifier
                         .padding(0.5.cssRem)
                         .fillMaxWidth()
-                        .onClick { showDropdown = false },
-                    variant = UndecoratedLinkVariant.then(UncoloredLinkVariant)
+                        .cursor(Cursor.Pointer)
+                        .onClick { 
+                            pendingDownload = if (language == Language.ENGLISH) {
+                                "/AlexandroBlanco-Resume.md"
+                            } else {
+                                "/AlexandroBlanco-Resume-ES.md"
+                            }
+                            showChallenge = true
+                            showDropdown = false
+                        }
                 )
+            }
+        }
+        
+        if (showChallenge) {
+            Overlay(
+                Modifier
+                    .onClick { 
+                        showChallenge = false
+                        challengeAnswer = ""
+                    }
+            ) {
+                Column(
+                    Modifier
+                        .backgroundColor(current.toSitePalette().nearBackground)
+                        .padding(2.cssRem)
+                        .borderRadius(12.px)
+                        .gap(1.cssRem)
+                        .onClick { it.stopPropagation() },
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    SpanText(
+                        if (language == Language.ENGLISH) "Verify you're human" else "Verifica que eres humano",
+                        Modifier.fontSize(1.2.cssRem).fontWeight(FontWeight.Bold)
+                    )
+                    SpanText(
+                        if (language == Language.ENGLISH) "What is $num1 + $num2?" else "¿Cuánto es $num1 + $num2?"
+                    )
+                    
+                    org.jetbrains.compose.web.dom.Input(
+                        type = org.jetbrains.compose.web.attributes.InputType.Text
+                    ) {
+                        style {
+                            padding(0.5.cssRem)
+                            borderRadius(4.px)
+                            width(100.px)
+                        }
+                        value(challengeAnswer)
+                        onInput { event -> 
+                            challengeAnswer = event.value
+                        }
+                    }
+                    
+                    Row(Modifier.gap(0.5.cssRem)) {
+                        org.jetbrains.compose.web.dom.Button({
+                            style {
+                                padding(0.5.cssRem, 1.cssRem)
+                                borderRadius(4.px)
+                                property("cursor", "pointer")
+                            }
+                            onClick {
+                                if (challengeAnswer.toIntOrNull() == correctAnswer) {
+                                    window.open(pendingDownload, "_blank")
+                                    showChallenge = false
+                                    challengeAnswer = ""
+                                }
+                            }
+                        }) {
+                            org.jetbrains.compose.web.dom.Text(
+                                if (language == Language.ENGLISH) "Submit" else "Enviar"
+                            )
+                        }
+                        
+                        org.jetbrains.compose.web.dom.Button({
+                            style {
+                                padding(0.5.cssRem, 1.cssRem)
+                                borderRadius(4.px)
+                                property("cursor", "pointer")
+                            }
+                            onClick {
+                                showChallenge = false
+                                challengeAnswer = ""
+                            }
+                        }) {
+                            org.jetbrains.compose.web.dom.Text(
+                                if (language == Language.ENGLISH) "Cancel" else "Cancelar"
+                            )
+                        }
+                    }
+                }
             }
         }
     }
@@ -129,11 +231,13 @@ private fun ColorModeButton() {
 
 @Composable
 private fun LanguageToggleButton() {
-    var isEnglish by remember { mutableStateOf(true) }
+    var language by rememberLanguage()
     
-    IconButton(onClick = { isEnglish = !isEnglish }) {
+    IconButton(onClick = { 
+        language = if (language == Language.ENGLISH) Language.SPANISH else Language.ENGLISH
+    }) {
         SpanText(
-            if (isEnglish) "🇺🇸" else "🇲🇽",
+            if (language == Language.ENGLISH) "🇲🇽" else "🇺🇸",
             Modifier.fontSize(1.2.cssRem)
         )
     }

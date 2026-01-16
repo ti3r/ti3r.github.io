@@ -1,0 +1,11 @@
+[build]
+  command = "curl -L https://github.com | tar xz -C /opt/java && export JAVA_HOME=/opt/java/jdk-11.0.22+7 && export PATH=$JAVA_HOME/bin:$PATH && ./gradlew :site:kobwebExport"
+  publish = "site/.kobweb/site"
+
+[build.environment]
+  JAVA_VERSION = "17"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

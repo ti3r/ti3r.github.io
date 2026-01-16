@@ -1,11 +1,11 @@
-# Alexandro Blanco Santana - Resume
+# Alexandro Blanco Santana
 
-## Contact Information
-- **Name:** Alexandro Blanco Santana
-- **Email:** ablanco.java@yahoo.com
-- **Location:** Minneapolis, MN
-- **LinkedIn:** https://www.linkedin.com/in/alexandro-blanco-santana/
-- **GitHub:** https://github.com/ti3r
+**Senior Full Stack Software Engineer**
+
+📧 ablanco.java@yahoo.com | 📍 Minneapolis, MN  
+🔗 [LinkedIn](https://www.linkedin.com/in/alexandro-blanco-santana/) | 💻 [GitHub](https://github.com/ti3r)
+
+---
 
 ## Profile
 
@@ -14,6 +14,8 @@ Senior Full Stack Software Engineer with 15+ years of experience building scalab
 Expertise in AWS cloud architecture, microservices, and full-stack development with Java/Kotlin, React, and Node.js. Proven experience with containerization (Kubernetes, Docker, OpenShift), CI/CD pipelines, and modern DevOps practices.
 
 Results-oriented professional with proven track record leading technical initiatives, mentoring teams, and delivering high-impact solutions in fast-paced, time-sensitive environments.
+
+---
 
 ## Work Experience
 
@@ -33,6 +35,8 @@ Architect and develop backend services and mobile applications supporting Amazon
 - Established CI/CD pipelines ensuring continuous integration compliance and operational excellence
 
 **Technologies:** AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK
+
+---
 
 ### ICF (Olson/Next), Minneapolis MN
 **Jr. Software Architect (Promoted September 2017) | Sr. Software Engineer** | July 2016 - March 2021  
@@ -55,6 +59,8 @@ Led architectural evolution of enterprise marketing platform over 4.5 years, pro
 
 **Technologies:** Kafka, Elasticsearch, OpenShift, Kubernetes, Docker, Spring Boot, Java, Spring Framework, Microservices, SOA, Linux/Unix, Shell Scripting, GitLab CI, Jenkins, Bamboo, Maven, Git, Mockito, SonarQube
 
+---
+
 ### Perficient, Minneapolis MN
 **Sr. Software Engineer** | July 2015 - July 2016  
 *BestBuy & CaringBridge Projects*
@@ -67,6 +73,8 @@ Developed RESTful APIs for financial systems and profile management serving web 
 - Implemented services using Spring Boot, Spring Data, Oracle, and MongoDB
 
 **Technologies:** Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle
+
+---
 
 ### OLSON, Minneapolis MN
 **Sr. Software Engineer** | June 2013 - July 2015  
@@ -83,6 +91,8 @@ Developed and maintained Amtrak's loyalty program backend services and managemen
 
 **Technologies:** Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git
 
+---
+
 ### Best Buy, Richfield MN
 **J2EE Developer** | April 2012 - July 2013  
 *Commerce API*
@@ -97,6 +107,8 @@ Developed RESTful web services enabling partner integration with BestBuy's e-com
 
 **Technologies:** Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven
 
+---
+
 ## Earlier Experience
 
 ### AutoZone (2011-2012) - C++/Java Programmer
@@ -104,6 +116,8 @@ Maintained electronic catalog and store applications using Java, Spring, C++, an
 
 ### Labinal de Mexico (2008-2010) - Systems Analyst/Programmer
 Developed Java EE web applications and .NET desktop applications
+
+---
 
 ## Freelance Experience
 
@@ -121,6 +135,8 @@ Architected and developed cloud-based invoicing platform for Mexican market (CFD
 
 **Technologies:** Java, JAX-RS, MongoDB, REST APIs, Maven, Jenkins
 
+---
+
 ## Education
 
 **Master's Degree: Information Technologies Administration**  
@@ -129,6 +145,8 @@ Monterrey's Institute of Technology and Superior Studies (ITESM), Chihuahua, Mex
 **Bachelor's Degree: Computer Systems Engineering**  
 Chihuahua's Institute of Technology No. II (ITCH II), Chihuahua, Mexico
 
+---
+
 ## Geographic Experience
 
 Extensive professional experience working across North America:
@@ -136,25 +154,27 @@ Extensive professional experience working across North America:
 - **United States:** Minneapolis, MN
 - **Mexico:** Chihuahua, MX
 
+---
+
 ## Technical Skills
 
-### Languages
+**Languages**  
 Java, Kotlin, TypeScript, Python, Groovy, Swift, SQL
 
-### Backend
+**Backend**  
 Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, JSP, Swagger
 
-### Frontend
+**Frontend**  
 React, Node.js, TypeScript, JavaScript, AngularJS, JQuery
 
-### Mobile
+**Mobile**  
 Android, iOS, Jetpack Compose, Kotlin, Swift
 
-### Cloud & Infrastructure
+**Cloud & Infrastructure**  
 AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), AWS CDK, Kubernetes, OpenShift, Docker, Linux/Unix, Windows, Shell Scripting
 
-### Databases
+**Databases**  
 DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL, PL/SQL
 
-### DevOps & Testing
+**DevOps & Testing**  
 CI/CD, GitLab CI, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, SonarQube, Postman, Cucumber, Spock, TDD/BDD
