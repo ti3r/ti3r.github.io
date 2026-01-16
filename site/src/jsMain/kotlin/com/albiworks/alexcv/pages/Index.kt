@@ -195,6 +195,8 @@ fun HomePage() {
                         Link("https://www.linkedin.com/in/alexandro-blanco-santana/", Strings.linkedIn[language].orEmpty())
                         SpanText(" | ")
                         Link("https://github.com/ti3r", Strings.gitHub[language].orEmpty())
+                        SpanText(" | ")
+                        Link("https://ti3r.github.io", "ti3r.github.io")
                     }
                 }
             }
@@ -497,7 +499,7 @@ fun CollapsibleJobEntry(
                 SpanText(
                     if (expanded) "▼" else "▶",
                     Modifier
-                        .fontSize(1.2.cssRem)
+                        .fontSize(1.5.cssRem)
                         .color(sitePalette.brand.primary)
                 )
             }
