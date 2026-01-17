@@ -1,4 +1,5 @@
 import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
+import kotlinx.html.script
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -13,7 +14,19 @@ version = "1.0-SNAPSHOT"
 kobweb {
     app {
         index {
-            description.set("Powered by Kobweb")
+            description.set("My website to list my resume")
+            head.add {
+                script {
+                    src = "https://www.googletagmanager.com/gtag/js?id=G-Q8TNTQ182T"
+                }
+                script {
+                    text("""window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'G-Q8TNTQ182T');""".trimIndent())
+                }
+                interceptUrls { enableSelfHosting() }
+            }
         }
         
         export {

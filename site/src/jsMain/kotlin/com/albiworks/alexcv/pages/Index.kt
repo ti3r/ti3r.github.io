@@ -8,6 +8,7 @@ import androidx.compose.runtime.setValue
 import com.albiworks.alexcv.Language
 import com.albiworks.alexcv.Strings
 import com.albiworks.alexcv.components.layouts.PageLayoutData
+import com.albiworks.alexcv.components.widgets.CollapsibleJobEntry
 import com.albiworks.alexcv.rememberLanguage
 import com.albiworks.alexcv.toSitePalette
 import com.varabyte.kobweb.compose.css.Cursor
@@ -88,7 +89,7 @@ val HeaderContentStyle = CssStyle.base {
 
 val ProfilePhotoStyle = CssStyle.base {
     Modifier
-        .size(120.px)
+        .size(240.px)
         .borderRadius(50.percent)
         .objectFit(ObjectFit.Cover)
 }
@@ -224,25 +225,25 @@ fun HomePage() {
             H2(SectionTitleStyle.toAttrs()) { Text(Strings.workExperienceTitle[language].orEmpty()) }
             
             // Amazon
-            CollapsibleJobEntry(
-                isExpanded = true,
-                company = Strings.amazonCompany[language].orEmpty(),
-                jobTitle = Strings.amazonJobTitle[language].orEmpty(),
-                dates = Strings.amazonDates[language].orEmpty(),
-                project = Strings.amazonProject[language].orEmpty(),
-                description = Strings.amazonDescription[language].orEmpty(),
-                achievements = listOf(
-                    Strings.amazonAchievement1[language].orEmpty(),
-                    Strings.amazonAchievement2[language].orEmpty(),
-                    Strings.amazonAchievement3[language].orEmpty(),
-                    Strings.amazonAchievement4[language].orEmpty(),
-                    Strings.amazonAchievement5[language].orEmpty(),
-                    Strings.amazonAchievement6[language].orEmpty(),
-                    Strings.amazonAchievement7[language].orEmpty()
-                ),
-                technologies = "AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK",
-                language = language
-            )
+                CollapsibleJobEntry(
+                    isExpanded = true,
+                    company = Strings.amazonCompany[language].orEmpty(),
+                    jobTitle = Strings.amazonJobTitle[language].orEmpty(),
+                    dates = Strings.amazonDates[language].orEmpty(),
+                    project = Strings.amazonProject[language].orEmpty(),
+                    description = Strings.amazonDescription[language].orEmpty(),
+                    achievements = listOf(
+                        Strings.amazonAchievement1[language].orEmpty(),
+                        Strings.amazonAchievement2[language].orEmpty(),
+                        Strings.amazonAchievement3[language].orEmpty(),
+                        Strings.amazonAchievement4[language].orEmpty(),
+                        Strings.amazonAchievement5[language].orEmpty(),
+                        Strings.amazonAchievement6[language].orEmpty(),
+                        Strings.amazonAchievement7[language].orEmpty()
+                    ),
+                    technologies = "AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK",
+                    language = language
+                )
 
             // ICF (combined)
             CollapsibleJobEntry(
@@ -462,68 +463,4 @@ fun HomePage() {
             }
         }
     }
-}
-
-@Composable
-fun CollapsibleJobEntry(
-    isExpanded: Boolean,
-    company: String,
-    jobTitle: String,
-    dates: String,
-    project: String,
-    description: String,
-    achievements: List<String>,
-    technologies: String,
-    language: Language
-) {
-    var expanded by remember { mutableStateOf(isExpanded) }
-    val sitePalette = ColorMode.current.toSitePalette()
-    
-    Div(Modifier.margin(bottom = 2.cssRem).toAttrs()) {
-        // Header (always visible, clickable)
-        Div(
-            Modifier
-                .cursor(Cursor.Pointer)
-                .onClick { expanded = !expanded }
-                .toAttrs()
-        ) {
-            Row(
-                Modifier.fillMaxWidth().justifyContent(JustifyContent.SpaceBetween),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column {
-                    Div(CompanyStyle.toAttrs()) { Text(company) }
-                    Div(JobTitleStyle.toAttrs()) { Text(jobTitle) }
-                    Div(DateStyle.toAttrs()) { Text(dates) }
-                }
-                SpanText(
-                    if (expanded) "▼" else "▶",
-                    Modifier
-                        .fontSize(1.5.cssRem)
-                        .color(sitePalette.brand.primary)
-                )
-            }
-        }
-        
-        // Collapsible content
-        if (expanded) {
-            Div(Modifier.margin(top = 0.5.cssRem).toAttrs()) {
-                P(Modifier.fontStyle(FontStyle.Italic).toAttrs()) { Text(project) }
-                P { Text(description) }
-                P(Modifier.fontWeight(FontWeight.SemiBold).margin(top = 0.5.cssRem).toAttrs()) { 
-                    Text(Strings.keyAchievements[language].orEmpty()) 
-                }
-                Ul {
-                    achievements.forEach { achievement ->
-                        Li { Text(achievement) }
-                    }
-                }
-                P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) { 
-                    Text("${Strings.technologies[language].orEmpty()} $technologies") 
-                }
-            }
-        }
-    }
-
-    Hr {  }
 }
