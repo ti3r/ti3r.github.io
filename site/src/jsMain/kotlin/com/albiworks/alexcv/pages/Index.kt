@@ -32,6 +32,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.fontStyle
 import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.gap
 import com.varabyte.kobweb.compose.ui.modifiers.justifyContent
+import com.varabyte.kobweb.compose.ui.modifiers.lineHeight
 import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
 import com.varabyte.kobweb.compose.ui.modifiers.onClick
@@ -171,29 +172,32 @@ fun initHomePage(ctx: InitRouteContext) {
 fun HomePage() {
     val sitePalette = ColorMode.current.toSitePalette()
     val language by rememberLanguage()
-    
+
     Column(ResumeContainerStyle.toModifier()) {
         // Header Section
         Div(HeaderStyle.toAttrs()) {
             Row(HeaderContentStyle.toModifier(), verticalAlignment = Alignment.CenterVertically) {
                 Image(
-                    "/foto_perfil.png", 
+                    "/foto_perfil.png",
                     Strings.profilePhotoAlt[language].orEmpty(),
                     ProfilePhotoStyle.toModifier()
                 )
-                
+
                 Column(Modifier.margin(left = 1.5.cssRem)) {
                     H1 {
                         SpanText("Alexandro Blanco Santana", Modifier.color(sitePalette.brand.primary))
                     }
                     P {
-                        SpanText("Minneapolis, MN")
+                        SpanText("Minneapolis, MN", Modifier.color(sitePalette.brand.primary))
                     }
                     P {
                         Link("mailto:ablanco.java@yahoo.com", "ablanco.java@yahoo.com")
                     }
                     P {
-                        Link("https://www.linkedin.com/in/alexandro-blanco-santana/", Strings.linkedIn[language].orEmpty())
+                        Link(
+                            "https://www.linkedin.com/in/alexandro-blanco-santana/",
+                            Strings.linkedIn[language].orEmpty()
+                        )
                         SpanText(" | ")
                         Link("https://github.com/ti3r", Strings.gitHub[language].orEmpty())
                         SpanText(" | ")
@@ -222,9 +226,9 @@ fun HomePage() {
         // Work Experience Section
         Div(AlternateSectionStyle.toModifier().backgroundColor(sitePalette.nearBackground).toAttrs()) {
             Div(AlternateSectionContentStyle.toAttrs()) {
-            H2(SectionTitleStyle.toAttrs()) { Text(Strings.workExperienceTitle[language].orEmpty()) }
-            
-            // Amazon
+                H2(SectionTitleStyle.toAttrs()) { Text(Strings.workExperienceTitle[language].orEmpty()) }
+
+                // Amazon
                 CollapsibleJobEntry(
                     isExpanded = true,
                     company = Strings.amazonCompany[language].orEmpty(),
@@ -245,84 +249,84 @@ fun HomePage() {
                     language = language
                 )
 
-            // ICF (combined)
-            CollapsibleJobEntry(
-                isExpanded = false,
-                company = Strings.icfCompany[language].orEmpty(),
-                jobTitle = Strings.icfJobTitle[language].orEmpty(),
-                dates = Strings.icfDates[language].orEmpty(),
-                project = Strings.icfProject[language].orEmpty(),
-                description = Strings.icfDescription[language].orEmpty(),
-                achievements = listOf(
-                    Strings.icfAchievement1[language].orEmpty(),
-                    Strings.icfAchievement2[language].orEmpty(),
-                    Strings.icfAchievement3[language].orEmpty(),
-                    Strings.icfAchievement4[language].orEmpty(),
-                    Strings.icfAchievement5[language].orEmpty(),
-                    Strings.icfAchievement6[language].orEmpty(),
-                    Strings.icfAchievement7[language].orEmpty(),
-                    Strings.icfAchievement8[language].orEmpty(),
-                    Strings.icfAchievement9[language].orEmpty(),
-                    Strings.icfAchievement10[language].orEmpty(),
-                    Strings.icfAchievement11[language].orEmpty()
-                ),
-                technologies = "Kafka, Elasticsearch, OpenShift, Kubernetes, Docker, Spring Boot, Java, Spring Framework, Microservices, SOA, Linux/Unix, Shell Scripting, GitLab CI, Jenkins, Bamboo, Maven, Git, Mockito, SonarQube",
-                language = language
-            )
+                // ICF (combined)
+                CollapsibleJobEntry(
+                    isExpanded = false,
+                    company = Strings.icfCompany[language].orEmpty(),
+                    jobTitle = Strings.icfJobTitle[language].orEmpty(),
+                    dates = Strings.icfDates[language].orEmpty(),
+                    project = Strings.icfProject[language].orEmpty(),
+                    description = Strings.icfDescription[language].orEmpty(),
+                    achievements = listOf(
+                        Strings.icfAchievement1[language].orEmpty(),
+                        Strings.icfAchievement2[language].orEmpty(),
+                        Strings.icfAchievement3[language].orEmpty(),
+                        Strings.icfAchievement4[language].orEmpty(),
+                        Strings.icfAchievement5[language].orEmpty(),
+                        Strings.icfAchievement6[language].orEmpty(),
+                        Strings.icfAchievement7[language].orEmpty(),
+                        Strings.icfAchievement8[language].orEmpty(),
+                        Strings.icfAchievement9[language].orEmpty(),
+                        Strings.icfAchievement10[language].orEmpty(),
+                        Strings.icfAchievement11[language].orEmpty()
+                    ),
+                    technologies = "Kafka, Elasticsearch, OpenShift, Kubernetes, Docker, Spring Boot, Java, Spring Framework, Microservices, SOA, Linux/Unix, Shell Scripting, GitLab CI, Jenkins, Bamboo, Maven, Git, Mockito, SonarQube",
+                    language = language
+                )
 
-            // Perficient
-            CollapsibleJobEntry(
-                isExpanded = false,
-                company = Strings.perficientCompany[language].orEmpty(),
-                jobTitle = Strings.perficientJobTitle[language].orEmpty(),
-                dates = Strings.perficientDates[language].orEmpty(),
-                project = Strings.perficientProject[language].orEmpty(),
-                description = Strings.perficientDescription[language].orEmpty(),
-                achievements = listOf(
-                    Strings.perficientAchievement1[language].orEmpty(),
-                    Strings.perficientAchievement2[language].orEmpty(),
-                    Strings.perficientAchievement3[language].orEmpty()
-                ),
-                technologies = "Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle",
-                language = language
-            )
+                // Perficient
+                CollapsibleJobEntry(
+                    isExpanded = false,
+                    company = Strings.perficientCompany[language].orEmpty(),
+                    jobTitle = Strings.perficientJobTitle[language].orEmpty(),
+                    dates = Strings.perficientDates[language].orEmpty(),
+                    project = Strings.perficientProject[language].orEmpty(),
+                    description = Strings.perficientDescription[language].orEmpty(),
+                    achievements = listOf(
+                        Strings.perficientAchievement1[language].orEmpty(),
+                        Strings.perficientAchievement2[language].orEmpty(),
+                        Strings.perficientAchievement3[language].orEmpty()
+                    ),
+                    technologies = "Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle",
+                    language = language
+                )
 
-            // OLSON
-            CollapsibleJobEntry(
-                isExpanded = false,
-                company = Strings.olsonCompany[language].orEmpty(),
-                jobTitle = Strings.olsonJobTitle[language].orEmpty(),
-                dates = Strings.olsonDates[language].orEmpty(),
-                project = Strings.olsonProject[language].orEmpty(),
-                description = Strings.olsonDescription[language].orEmpty(),
-                achievements = listOf(
-                    Strings.olsonAchievement1[language].orEmpty(),
-                    Strings.olsonAchievement2[language].orEmpty(),
-                    Strings.olsonAchievement3[language].orEmpty(),
-                    Strings.olsonAchievement4[language].orEmpty(),
-                    Strings.olsonAchievement5[language].orEmpty()
-                ),
-                technologies = "Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git",
-                language = language
-            )
+                // OLSON
+                CollapsibleJobEntry(
+                    isExpanded = false,
+                    company = Strings.olsonCompany[language].orEmpty(),
+                    jobTitle = Strings.olsonJobTitle[language].orEmpty(),
+                    dates = Strings.olsonDates[language].orEmpty(),
+                    project = Strings.olsonProject[language].orEmpty(),
+                    description = Strings.olsonDescription[language].orEmpty(),
+                    achievements = listOf(
+                        Strings.olsonAchievement1[language].orEmpty(),
+                        Strings.olsonAchievement2[language].orEmpty(),
+                        Strings.olsonAchievement3[language].orEmpty(),
+                        Strings.olsonAchievement4[language].orEmpty(),
+                        Strings.olsonAchievement5[language].orEmpty()
+                    ),
+                    technologies = "Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git",
+                    language = language
+                )
 
-            // Best Buy
-            CollapsibleJobEntry(
-                isExpanded = false,
-                company = Strings.bestBuyCompany[language].orEmpty(),
-                jobTitle = Strings.bestBuyJobTitle[language].orEmpty(),
-                dates = Strings.bestBuyDates[language].orEmpty(),
-                project = Strings.bestBuyProject[language].orEmpty(),
-                description = Strings.bestBuyDescription[language].orEmpty(),
-                achievements = listOf(
-                    Strings.bestBuyAchievement1[language].orEmpty(),
-                    Strings.bestBuyAchievement2[language].orEmpty(),
-                    Strings.bestBuyAchievement3[language].orEmpty(),
-                    Strings.bestBuyAchievement4[language].orEmpty()
-                ),
-                technologies = "Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven",
-                language = language
-            )
+                // Best Buy
+                CollapsibleJobEntry(
+                    isExpanded = false,
+                    company = Strings.bestBuyCompany[language].orEmpty(),
+                    jobTitle = Strings.bestBuyJobTitle[language].orEmpty(),
+                    dates = Strings.bestBuyDates[language].orEmpty(),
+                    project = Strings.bestBuyProject[language].orEmpty(),
+                    description = Strings.bestBuyDescription[language].orEmpty(),
+                    achievements = listOf(
+                        Strings.bestBuyAchievement1[language].orEmpty(),
+                        Strings.bestBuyAchievement2[language].orEmpty(),
+                        Strings.bestBuyAchievement3[language].orEmpty(),
+                        Strings.bestBuyAchievement4[language].orEmpty()
+                    ),
+                    technologies = "Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven",
+                    language = language
+                )
             }
         }
 
@@ -330,17 +334,17 @@ fun HomePage() {
         Div(SectionStyle.toAttrs()) {
             Div(SectionContentStyle.toAttrs()) {
                 H2(SectionTitleStyle.toAttrs()) { Text(Strings.earlierExperienceTitle[language].orEmpty()) }
-                
+
                 Div(Modifier.margin(bottom = 1.cssRem).toAttrs()) {
-                    P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) { 
-                        Text(Strings.autoZoneTitle[language].orEmpty()) 
+                    P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) {
+                        Text(Strings.autoZoneTitle[language].orEmpty())
                     }
                     P { Text(Strings.autoZoneDescription[language].orEmpty()) }
                 }
-                
+
                 Div {
-                    P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) { 
-                        Text(Strings.labinalTitle[language].orEmpty()) 
+                    P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) {
+                        Text(Strings.labinalTitle[language].orEmpty())
                     }
                     P { Text(Strings.labinalDescription[language].orEmpty()) }
                 }
@@ -351,26 +355,26 @@ fun HomePage() {
         Div(AlternateSectionStyle.toModifier().backgroundColor(sitePalette.nearBackground).toAttrs()) {
             Div(AlternateSectionContentStyle.toAttrs()) {
                 H2(SectionTitleStyle.toAttrs()) { Text(Strings.freelanceExperienceTitle[language].orEmpty()) }
-                
+
                 // Albiworks USA
                 Div(Modifier.margin(bottom = 2.cssRem).toAttrs()) {
                     Div(CompanyStyle.toAttrs()) { Text(Strings.albiworksUSACompany[language].orEmpty()) }
                     Div(JobTitleStyle.toAttrs()) { Text(Strings.albiworksUSAJobTitle[language].orEmpty()) }
                     Div(DateStyle.toAttrs()) { Text(Strings.albiworksUSADates[language].orEmpty()) }
                     P { Text(Strings.albiworksUSADescription[language].orEmpty()) }
-                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) { 
-                        Text("${Strings.technologies[language].orEmpty()} C#, .NET 8.0, FTDI Chips and Interfaces") 
+                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) {
+                        Text("${Strings.technologies[language].orEmpty()} C#, .NET 8.0, FTDI Chips and Interfaces")
                     }
                 }
-                
+
                 // Albiworks Mexico
                 Div {
                     Div(CompanyStyle.toAttrs()) { Text(Strings.albiworksMexicoCompany[language].orEmpty()) }
                     Div(JobTitleStyle.toAttrs()) { Text(Strings.albiworksMexicoJobTitle[language].orEmpty()) }
                     Div(DateStyle.toAttrs()) { Text(Strings.albiworksMexicoDates[language].orEmpty()) }
                     P { Text(Strings.albiworksMexicoDescription[language].orEmpty()) }
-                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) { 
-                        Text("${Strings.technologies[language].orEmpty()} Java, JAX-RS, MongoDB, REST APIs, Maven, Jenkins") 
+                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) {
+                        Text("${Strings.technologies[language].orEmpty()} Java, JAX-RS, MongoDB, REST APIs, Maven, Jenkins")
                     }
                 }
             }
@@ -399,7 +403,10 @@ fun HomePage() {
                             SpanText("🇨🇦", Modifier.fontSize(32.px))
                         }
                         Column {
-                            SpanText(Strings.canadaLocation[language].orEmpty(), Modifier.fontWeight(FontWeight.SemiBold))
+                            SpanText(
+                                Strings.canadaLocation[language].orEmpty(),
+                                Modifier.fontWeight(FontWeight.SemiBold)
+                            )
                             SpanText(Strings.canadaDescription[language].orEmpty(), Modifier.fontSize(0.9.cssRem))
                         }
                     }
@@ -419,47 +426,78 @@ fun HomePage() {
         // Education Section
         Div(AlternateSectionStyle.toModifier().backgroundColor(sitePalette.nearBackground).toAttrs()) {
             Div(AlternateSectionContentStyle.toAttrs()) {
-            H2(SectionTitleStyle.toAttrs()) { Text(Strings.educationTitle[language].orEmpty()) }
-            Div(Modifier.margin(bottom = 1.cssRem).toAttrs()) {
-                P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) { Text(Strings.mastersDegree[language].orEmpty()) }
-                P { Text(Strings.itesmLocation[language].orEmpty()) }
-            }
-            Div {
-                P(Modifier.fontWeight(FontWeight.SemiBold).toAttrs()) { Text(Strings.bachelorsDegree[language].orEmpty()) }
-                P { Text(Strings.itchLocation[language].orEmpty()) }
-            }
+                H2(SectionTitleStyle.toAttrs()) { Text(Strings.educationTitle[language].orEmpty()) }
+                Div(Modifier.margin(bottom = 1.cssRem).toAttrs()) {
+                    P(
+                        Modifier.fontWeight(FontWeight.SemiBold).toAttrs()
+                    ) { Text(Strings.mastersDegree[language].orEmpty()) }
+                    P { Text(Strings.itesmLocation[language].orEmpty()) }
+                }
+                Div {
+                    P(
+                        Modifier.fontWeight(FontWeight.SemiBold).toAttrs()
+                    ) { Text(Strings.bachelorsDegree[language].orEmpty()) }
+                    P { Text(Strings.itchLocation[language].orEmpty()) }
+                }
             }
         }
 
         // Technical Skills Section
         Div(SectionStyle.toAttrs()) {
             Div(SectionContentStyle.toAttrs()) {
-            H2(SectionTitleStyle.toAttrs()) { Text(Strings.technicalSkillsTitle[language].orEmpty()) }
-            Row(Modifier.gap(2.cssRem)) {
-                Column(Modifier.fillMaxWidth(50.percent)) {
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).toAttrs()) { Text(Strings.languagesTitle[language].orEmpty()) }
-                    P { Text("Java, Kotlin, TypeScript, Python, Groovy, Swift, SQL") }
-                    
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).margin(top = 1.cssRem).toAttrs()) { Text(Strings.backendTitle[language].orEmpty()) }
-                    P { Text("Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, JSP, Swagger") }
-                    
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).margin(top = 1.cssRem).toAttrs()) { Text(Strings.frontendTitle[language].orEmpty()) }
-                    P { Text("React, Node.js, TypeScript, JavaScript, AngularJS, JQuery") }
-                    
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).margin(top = 1.cssRem).toAttrs()) { Text(Strings.mobileTitle[language].orEmpty()) }
-                    P { Text("Android, iOS, Jetpack Compose, Kotlin, Swift") }
+                H2(SectionTitleStyle.toAttrs()) { Text(Strings.technicalSkillsTitle[language].orEmpty()) }
+                Row(Modifier.gap(2.cssRem)) {
+                    Column(Modifier.fillMaxWidth(50.percent)) {
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .toAttrs()
+                        ) { Text(Strings.languagesTitle[language].orEmpty()) }
+                        P { Text("Java, Kotlin, TypeScript, Python, Groovy, Swift, SQL") }
+
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.backendTitle[language].orEmpty()) }
+                        P { Text("Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, JSP, Swagger") }
+
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.frontendTitle[language].orEmpty()) }
+                        P { Text("React, Node.js, TypeScript, JavaScript, AngularJS, JQuery") }
+
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.mobileTitle[language].orEmpty()) }
+                        P { Text("Android, iOS, Jetpack Compose, Kotlin, Swift") }
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.currentlyLearningTitle[language].orEmpty()) }
+                        P { Text("Rust, Embedded & RTIC") }
+
+                    }
+                    Column(Modifier.fillMaxWidth(50.percent)) {
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .toAttrs()
+                        ) { Text(Strings.cloudInfrastructureTitle[language].orEmpty()) }
+                        P { Text("AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), AWS CDK, Kubernetes, OpenShift, Docker, Linux/Unix, Windows, Shell Scripting") }
+
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.databasesTitle[language].orEmpty()) }
+                        P { Text("DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL, PL/SQL") }
+
+                        H3(
+                            Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
+                                .margin(top = 1.cssRem).toAttrs()
+                        ) { Text(Strings.devopsTestingTitle[language].orEmpty()) }
+                        P { Text("CI/CD, GitLab CI, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, SonarQube, Postman, Cucumber, Spock, TDD/BDD") }
+                    }
                 }
-                Column(Modifier.fillMaxWidth(50.percent)) {
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).toAttrs()) { Text(Strings.cloudInfrastructureTitle[language].orEmpty()) }
-                    P { Text("AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), AWS CDK, Kubernetes, OpenShift, Docker, Linux/Unix, Windows, Shell Scripting") }
-                    
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).margin(top = 1.cssRem).toAttrs()) { Text(Strings.databasesTitle[language].orEmpty()) }
-                    P { Text("DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL, PL/SQL") }
-                    
-                    H3(Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem).margin(top = 1.cssRem).toAttrs()) { Text(Strings.devopsTestingTitle[language].orEmpty()) }
-                    P { Text("CI/CD, GitLab CI, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, SonarQube, Postman, Cucumber, Spock, TDD/BDD") }
-                }
-            }
             }
         }
     }

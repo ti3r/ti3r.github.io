@@ -2,6 +2,7 @@ package com.albiworks.alexcv.components.sections
 
 import androidx.compose.runtime.*
 import com.albiworks.alexcv.Language
+import com.albiworks.alexcv.Strings
 import com.albiworks.alexcv.rememberLanguage
 import com.varabyte.kobweb.browser.dom.ElementTarget
 import com.varabyte.kobweb.compose.css.functions.clamp
@@ -42,6 +43,7 @@ import com.albiworks.alexcv.toSitePalette
 import com.varabyte.kobweb.compose.css.ObjectFit
 import com.varabyte.kobweb.silk.theme.colors.ColorMode
 import com.varabyte.kobweb.silk.theme.colors.ColorMode.Companion.current
+import org.jetbrains.compose.web.attributes.AutoComplete.Companion.language
 
 val NavHeaderStyle = CssStyle.base {
     Modifier
@@ -55,7 +57,7 @@ val NavHeaderStyle = CssStyle.base {
 
 val NavProfilePhotoStyle = CssStyle.base {
     Modifier
-        .size(40.px)
+        .size(4.cssRem)
         .borderRadius(50.percent)
         .objectFit(ObjectFit.Cover)
         .margin(right = 0.5.cssRem)
@@ -223,10 +225,12 @@ private fun MenuItems() {
 @Composable
 private fun ColorModeButton() {
     var colorMode by ColorMode.currentState
+    var language by rememberLanguage()
+
     IconButton(onClick = { colorMode = colorMode.opposite },) {
         if (colorMode.isLight) MoonIcon() else SunIcon()
     }
-    Tooltip(ElementTarget.PreviousSibling, "Toggle color mode", placement = PopupPlacement.BottomRight)
+    Tooltip(ElementTarget.PreviousSibling, Strings.toggleColorMode[language].orEmpty(), placement = PopupPlacement.BottomRight)
 }
 
 @Composable
@@ -238,10 +242,10 @@ private fun LanguageToggleButton() {
     }) {
         SpanText(
             if (language == Language.ENGLISH) "🇲🇽" else "🇺🇸",
-            Modifier.fontSize(1.2.cssRem)
+            Modifier.fontSize(2.cssRem)
         )
     }
-    Tooltip(ElementTarget.PreviousSibling, "Toggle language", placement = PopupPlacement.BottomRight)
+    Tooltip(ElementTarget.PreviousSibling, Strings.toggleLanguage[language].orEmpty(), placement = PopupPlacement.BottomRight)
 }
 
 @Composable
@@ -255,6 +259,16 @@ private fun HamburgerButton(onClick: () -> Unit) {
 private fun CloseButton(onClick: () -> Unit) {
     IconButton(onClick) {
         CloseIcon()
+    }
+}
+
+val ProfileFadeInAnim = Keyframes {
+    from {
+        Modifier.opacity(0).scale(0.8)
+    }
+
+    to {
+        Modifier.opacity(1).scale(1)
     }
 }
 
@@ -285,30 +299,52 @@ enum class SideMenuState {
 @Composable
 fun NavHeader() {
     var isScrolled by remember { mutableStateOf(false) }
+    var showProfile by remember { mutableStateOf(false) }
     
     LaunchedEffect(Unit) {
         val handleScroll: (dynamic) -> Unit = { _ ->
-            val scrollY = window.scrollY.toDouble()
-            isScrolled = scrollY > 200
+            val scrollY = window.scrollY
+            val shouldShow = scrollY > 350
+            if (shouldShow != isScrolled) {
+                isScrolled = shouldShow
+                if (shouldShow) {
+                    showProfile = true
+                }
+            }
         }
         window.addEventListener("scroll", handleScroll, false)
     }
     
     Row(NavHeaderStyle.toModifier(), verticalAlignment = Alignment.CenterVertically) {
-        if (isScrolled) {
-            Link("/") {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Image(
-                        "/foto_perfil.png", 
-                        "Alexandro Blanco Profile Photo",
-                        NavProfilePhotoStyle.toModifier()
-                    )
-                    SpanText("A. Blanco", 
-                        Modifier
-                            .fontSize(1.2.cssRem)
-                            .fontWeight(FontWeight.Bold)
-                            .color(current.toSitePalette().brand.primary)
-                    )
+        if (showProfile) {
+            key(isScrolled) {
+                Link("/",
+                    Modifier
+                        .animation(
+                            ProfileFadeInAnim.toAnimation(
+                                duration = 800.ms,
+                                timingFunction = AnimationTimingFunction.EaseOut,
+                                direction = if (isScrolled) AnimationDirection.Normal else AnimationDirection.Reverse,
+                                fillMode = AnimationFillMode.Forwards
+                            )
+                        )
+                        .onAnimationEnd { 
+                            if (!isScrolled) showProfile = false
+                        }
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Image(
+                            "/foto_perfil.png", 
+                            "Alexandro Blanco Profile Photo",
+                            NavProfilePhotoStyle.toModifier()
+                        )
+                        SpanText("A. Blanco", 
+                            Modifier
+                                .fontSize(1.2.cssRem)
+                                .fontWeight(FontWeight.Bold)
+                                .color(current.toSitePalette().brand.primary)
+                        )
+                    }
                 }
             }
         }

@@ -511,6 +511,11 @@ object Strings {
         Language.SPANISH to "DevOps y Pruebas"
     )
     
+    val currentlyLearningTitle = mapOf(
+        Language.ENGLISH to "Currently Learning",
+        Language.SPANISH to "Actualmente Aprendiendo"
+    )
+    
     // Education Section
     val educationTitle = mapOf(
         Language.ENGLISH to "Education",
@@ -538,6 +543,16 @@ object Strings {
     val geographicExperienceDescription = mapOf(
         Language.ENGLISH to "Extensive professional experience working across North America:",
         Language.SPANISH to "Amplia experiencia profesional trabajando en América del Norte:"
+    )
+
+    val toggleLanguage = mapOf(
+        Language.ENGLISH to "Toggle Language",
+        Language.SPANISH to "Cambiar Idioma"
+    )
+
+    val toggleColorMode = mapOf(
+        Language.ENGLISH to "Toggle Color Mode",
+        Language.SPANISH to "Cambiar Colores"
     )
 }
 
