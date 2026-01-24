@@ -1,5 +1,0 @@
-{
-  "buildCommand": "./gradlew :site:kobwebExport",
-  "outputDirectory": "site/.kobweb/site",
-  "framework": null
-}

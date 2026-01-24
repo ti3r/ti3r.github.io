@@ -46,18 +46,18 @@ object Strings {
     )
     
     val profileParagraph1 = mapOf(
-        Language.ENGLISH to "Senior Full Stack Software Engineer with 15+ years of experience building scalable enterprise applications and cloud infrastructure. Currently at Amazon, architecting backend services and mobile solutions for Robotics AI and Transportation Services.",
-        Language.SPANISH to "Ingeniero de Software Full Stack Senior con más de 15 años de experiencia construyendo aplicaciones empresariales escalables e infraestructura en la nube. Actualmente en Amazon, diseñando servicios backend y soluciones móviles para Robótica AI y Servicios de Transporte."
+        Language.ENGLISH to "Senior Full Stack Software Engineer with 17 years of experience architecting and delivering end-to-end cloud solutions. Currently at Amazon, building mobile applications and backend services that power Amazon Transportation Services' middle-mile logistics network across North America, Europe, and Japan.",
+        Language.SPANISH to "Ingeniero de Software Full Stack Senior con 17 años de experiencia arquitectando y entregando soluciones cloud de extremo a extremo. Actualmente en Amazon, construyendo aplicaciones móviles y servicios backend que impulsan la red logística de milla media de Amazon Transportation Services en Norteamérica, Europa y Japón."
     )
     
     val profileParagraph2 = mapOf(
-        Language.ENGLISH to "Expertise in AWS cloud architecture, microservices, and full-stack development with Java/Kotlin, React, and Node.js. Proven experience with containerization (Kubernetes, Docker, OpenShift), CI/CD pipelines, and modern DevOps practices.",
-        Language.SPANISH to "Experiencia en arquitectura de nube AWS, microservicios y desarrollo full-stack con Java/Kotlin, React y Node.js. Experiencia comprobada con contenedorización (Kubernetes, Docker, OpenShift), pipelines CI/CD y prácticas modernas de DevOps."
+        Language.ENGLISH to "Deep expertise in AWS serverless architecture, mobile development (Android/iOS), and microservices. Track record of designing scalable systems processing millions of daily transactions, leading technical initiatives from concept to production, and mentoring engineering teams.",
+        Language.SPANISH to "Profunda experiencia en arquitectura serverless de AWS, desarrollo móvil (Android/iOS) y microservicios. Historial de diseño de sistemas escalables procesando millones de transacciones diarias, liderando iniciativas técnicas desde concepto hasta producción, y mentoreando equipos de ingeniería."
     )
     
     val profileParagraph3 = mapOf(
-        Language.ENGLISH to "Results-oriented professional with proven track record leading technical initiatives, mentoring teams, and delivering high-impact solutions in fast-paced, time-sensitive environments.",
-        Language.SPANISH to "Profesional orientado a resultados con historial comprobado liderando iniciativas técnicas, mentoreando equipos y entregando soluciones de alto impacto en entornos acelerados y sensibles al tiempo."
+        Language.ENGLISH to "Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile development (Kotlin, Swift, Jetpack Compose) • Infrastructure as Code (AWS CDK) • CI/CD automation • Microservices design",
+        Language.SPANISH to "Especializado en: Arquitectura cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo móvil (Kotlin, Swift, Jetpack Compose) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Diseño de microservicios"
     )
     
     // Work Experience Section
@@ -93,48 +93,48 @@ object Strings {
     )
     
     val amazonProject = mapOf(
-        Language.ENGLISH to "Robotics AI & Amazon Transportation Services (ATS)",
-        Language.SPANISH to "Robótica AI y Servicios de Transporte de Amazon (ATS)"
+        Language.ENGLISH to "Amazon Transportation Services (ATS)",
+        Language.SPANISH to "Servicios de Transporte de Amazon (ATS)"
     )
     
     val amazonDescription = mapOf(
-        Language.ENGLISH to "Architect and develop backend services and mobile applications supporting Amazon's middle-mile transportation network and warehouse computer vision systems. Lead infrastructure design, mentor engineers, and drive technical decisions for services handling millions of daily transactions.",
-        Language.SPANISH to "Arquitecto y desarrollo de servicios backend y aplicaciones móviles que soportan la red de transporte de media milla de Amazon y sistemas de visión por computadora de almacenes. Lidero el diseño de infraestructura, mentoreo ingenieros y dirijo decisiones técnicas para servicios que manejan millones de transacciones diarias."
+        Language.ENGLISH to "Architect and develop end-to-end mobile and backend solutions for Amazon's middle-mile transportation network serving 50,000+ transportation partners across North America, Europe, and Japan. Key contributor on a 13-engineer team, mentoring junior engineers (50%+ of team) and driving technical decisions for services processing millions of daily transactions.",
+        Language.SPANISH to "Arquitecto y desarrollo soluciones móviles y backend de extremo a extremo para la red de transporte de milla media de Amazon sirviendo a más de 50,000 socios de transporte en Norteamérica, Europa y Japón. Contribuidor clave en un equipo de 13 ingenieros, mentoreando ingenieros junior (50%+ del equipo) y dirigiendo decisiones técnicas para servicios que procesan millones de transacciones diarias."
     )
     
     val amazonAchievement1 = mapOf(
-        Language.ENGLISH to "Designed and implemented Android and iOS mobile applications enabling transportation partners to discover and execute product loads across Amazon's middle-mile network",
-        Language.SPANISH to "Diseñé e implementé aplicaciones móviles Android e iOS que permiten a los socios de transporte descubrir y ejecutar cargas de productos a través de la red de media milla de Amazon"
+        Language.ENGLISH to "Architect and build scalable serverless backend services using AWS Lambda, DynamoDB, and API Gateway, processing millions of daily transactions for real-time load matching, partner operations, and logistics orchestration",
+        Language.SPANISH to "Arquitecto y construyo servicios backend serverless escalables usando AWS Lambda, DynamoDB y API Gateway, procesando millones de transacciones diarias para emparejamiento de cargas en tiempo real, operaciones de socios y orquestación logística"
     )
     
     val amazonAchievement2 = mapOf(
-        Language.ENGLISH to "Built scalable backend services using AWS Lambda, DynamoDB, and API Gateway supporting internal and external users",
-        Language.SPANISH to "Construí servicios backend escalables usando AWS Lambda, DynamoDB y API Gateway que soportan usuarios internos y externos"
+        Language.ENGLISH to "Design and implement AWS CDK infrastructure with comprehensive monitoring, alarms, and automated alerts ensuring 99.9% SLA compliance across multi-region deployments",
+        Language.SPANISH to "Diseño e implemento infraestructura AWS CDK con monitoreo integral, alarmas y alertas automatizadas asegurando 99.9% de cumplimiento de SLA en despliegues multi-región"
     )
     
     val amazonAchievement3 = mapOf(
-        Language.ENGLISH to "Developed and maintained internal developer tools using Node.js, React, and TypeScript",
-        Language.SPANISH to "Desarrollé y mantuve herramientas internas para desarrolladores usando Node.js, React y TypeScript"
+        Language.ENGLISH to "Orchestrated migration of EU operations from Dublin to Spain, re-architecting backend services and data pipelines to ensure zero downtime and seamless transition for transportation partners",
+        Language.SPANISH to "Orquesté la migración de operaciones de la UE de Dublín a España, re-arquitectando servicios backend y pipelines de datos para asegurar cero tiempo de inactividad y transición sin problemas para socios de transporte"
     )
     
     val amazonAchievement4 = mapOf(
-        Language.ENGLISH to "Developed AWS CDK infrastructure implementing comprehensive monitoring, alarms, and alerts to meet SLA requirements",
-        Language.SPANISH to "Desarrollé infraestructura AWS CDK implementando monitoreo integral, alarmas y alertas para cumplir con los requisitos de SLA"
+        Language.ENGLISH to "Established CI/CD pipelines with automated testing and deployment strategies, reducing release cycle time by 40% while maintaining production stability",
+        Language.SPANISH to "Establecí pipelines CI/CD con pruebas automatizadas y estrategias de despliegue, reduciendo el tiempo de ciclo de lanzamiento en 40% mientras mantengo estabilidad de producción"
     )
     
     val amazonAchievement5 = mapOf(
-        Language.ENGLISH to "Architected computer vision and ML solutions for COVID-19 proximity detection across Amazon distribution centers",
-        Language.SPANISH to "Arquitecté soluciones de visión por computadora y ML para detección de proximidad COVID-19 en centros de distribución de Amazon"
+        Language.ENGLISH to "Lead modernization of Relay mobile application (4.7-star rating on both app stores), migrating Android to Jetpack Compose and iOS to SwiftUI while supporting 50,000+ active users",
+        Language.SPANISH to "Lidero la modernización de la aplicación móvil Relay (calificación de 4.7 estrellas en ambas tiendas de aplicaciones), migrando Android a Jetpack Compose e iOS a SwiftUI mientras apoyo a más de 50,000 usuarios activos"
     )
     
     val amazonAchievement6 = mapOf(
-        Language.ENGLISH to "Led design reviews and mentored junior engineers through code reviews and technical guidance",
-        Language.SPANISH to "Lideré revisiones de diseño y mentoreé ingenieros junior a través de revisiones de código y guía técnica"
+        Language.ENGLISH to "Support and enhance production mobile applications enabling transportation partners to discover and execute product loads across Amazon's logistics network",
+        Language.SPANISH to "Apoyo y mejoro aplicaciones móviles de producción que permiten a socios de transporte descubrir y ejecutar cargas de productos a través de la red logística de Amazon"
     )
     
     val amazonAchievement7 = mapOf(
-        Language.ENGLISH to "Established CI/CD pipelines ensuring continuous integration compliance and operational excellence",
-        Language.SPANISH to "Establecí pipelines CI/CD asegurando cumplimiento de integración continua y excelencia operacional"
+        Language.ENGLISH to "Lead design reviews and technical mentorship for junior engineers through code reviews, pair programming, and architectural guidance",
+        Language.SPANISH to "Lidero revisiones de diseño y mentoría técnica para ingenieros junior a través de revisiones de código, programación en pareja y guía arquitectónica"
     )
     
     // ICF Work Experience
@@ -144,8 +144,8 @@ object Strings {
     )
     
     val icfJobTitle = mapOf(
-        Language.ENGLISH to "Jr. Software Architect (Promoted September 2017) | Sr. Software Engineer",
-        Language.SPANISH to "Arquitecto de Software Jr. (Promovido Septiembre 2017) | Ingeniero de Software Sr."
+        Language.ENGLISH to "Jr. Software Architect (Promoted September 2019) | Sr. Software Engineer",
+        Language.SPANISH to "Arquitecto de Software Jr. (Promovido Septiembre 2019) | Ingeniero de Software Sr."
     )
     
     val icfDates = mapOf(
@@ -154,68 +154,43 @@ object Strings {
     )
     
     val icfProject = mapOf(
-        Language.ENGLISH to "Tally Platform",
-        Language.SPANISH to "Plataforma Tally"
+        Language.ENGLISH to "Tally Platform - Loyalty & Rewards Management",
+        Language.SPANISH to "Plataforma Tally - Gestión de Lealtad y Recompensas"
     )
     
     val icfDescription = mapOf(
-        Language.ENGLISH to "Led architectural evolution of enterprise marketing platform over 4.5 years, progressing from senior engineer to architect. Drove adoption of modern cloud technologies, microservices architecture, and established technical standards across engineering teams.",
-        Language.SPANISH to "Lideré la evolución arquitectónica de la plataforma de marketing empresarial durante 4.5 años, progresando de ingeniero senior a arquitecto. Impulsé la adopción de tecnologías modernas de nube, arquitectura de microservicios y establecí estándares técnicos en los equipos de ingeniería."
+        Language.ENGLISH to "Led architectural evolution of enterprise loyalty and rewards platform processing millions of daily transactions for global hospitality clients including Hilton and Hyatt. Progressed from senior engineer to architect, driving modernization from monolithic architecture to cloud-native microservices.",
+        Language.SPANISH to "Lideré la evolución arquitectónica de la plataforma empresarial de lealtad y recompensas procesando millones de transacciones diarias para clientes de hospitalidad global incluyendo Hilton y Hyatt. Progresé de ingeniero senior a arquitecto, impulsando la modernización de arquitectura monolítica a microservicios nativos de nube."
     )
     
     val icfAchievement1 = mapOf(
-        Language.ENGLISH to "Architected next-generation platform using Kafka, Elasticsearch, OpenShift, and Spring Boot",
-        Language.SPANISH to "Arquitecté plataforma de próxima generación usando Kafka, Elasticsearch, OpenShift y Spring Boot"
+        Language.ENGLISH to "Architected and executed migration from monolithic application to event-driven microservices architecture using Kafka, Spring Boot, and OpenShift, enabling asynchronous transaction processing and horizontal scaling",
+        Language.SPANISH to "Arquitecté y ejecuté la migración de aplicación monolítica a arquitectura de microservicios basada en eventos usando Kafka, Spring Boot y OpenShift, habilitando procesamiento asíncrono de transacciones y escalamiento horizontal"
     )
     
     val icfAchievement2 = mapOf(
-        Language.ENGLISH to "Designed and implemented scalable microservices architecture improving performance and enabling horizontal scaling",
-        Language.SPANISH to "Diseñé e implementé arquitectura de microservicios escalable mejorando el rendimiento y habilitando escalamiento horizontal"
+        Language.ENGLISH to "Designed containerized deployment strategy using Kubernetes, Docker, and Helm charts on Linux environments, reducing deployment time and improving system reliability",
+        Language.SPANISH to "Diseñé estrategia de despliegue en contenedores usando Kubernetes, Docker y Helm charts en entornos Linux, reduciendo tiempo de despliegue y mejorando confiabilidad del sistema"
     )
     
     val icfAchievement3 = mapOf(
-        Language.ENGLISH to "Deployed and managed containerized applications using Kubernetes, Docker, and OpenShift on Linux environments",
-        Language.SPANISH to "Desplegué y gestioné aplicaciones en contenedores usando Kubernetes, Docker y OpenShift en entornos Linux"
+        Language.ENGLISH to "Established CI/CD pipelines using Jenkins and Bamboo with automated testing (JUnit, Mockito) and code quality gates (SonarQube)",
+        Language.SPANISH to "Establecí pipelines CI/CD usando Jenkins y Bamboo con pruebas automatizadas (JUnit, Mockito) y compuertas de calidad de código (SonarQube)"
     )
     
     val icfAchievement4 = mapOf(
-        Language.ENGLISH to "Established CI/CD pipelines using Jenkins, GitLab CI, and Bamboo with automated testing and deployment",
-        Language.SPANISH to "Establecí pipelines CI/CD usando Jenkins, GitLab CI y Bamboo con pruebas automatizadas y despliegue"
+        Language.ENGLISH to "Implemented Service Oriented Architecture following 12-Factor Application principles and enterprise design patterns",
+        Language.SPANISH to "Implementé Arquitectura Orientada a Servicios siguiendo principios de Aplicación 12-Factor y patrones de diseño empresariales"
     )
     
     val icfAchievement5 = mapOf(
-        Language.ENGLISH to "Implemented test automation framework using Mockito, JUnit, and SonarQube for code quality assurance",
-        Language.SPANISH to "Implementé framework de automatización de pruebas usando Mockito, JUnit y SonarQube para aseguramiento de calidad de código"
+        Language.ENGLISH to "Led cross-team coordination for platform features serving multiple enterprise clients",
+        Language.SPANISH to "Lideré coordinación entre equipos para características de plataforma sirviendo múltiples clientes empresariales"
     )
     
     val icfAchievement6 = mapOf(
-        Language.ENGLISH to "Developed Linux shell scripts for automation, monitoring, and deployment processes",
-        Language.SPANISH to "Desarrollé scripts de shell Linux para automatización, monitoreo y procesos de despliegue"
-    )
-    
-    val icfAchievement7 = mapOf(
-        Language.ENGLISH to "Led migration from monolithic architecture to cloud-native microservices",
-        Language.SPANISH to "Lideré la migración de arquitectura monolítica a microservicios nativos de nube"
-    )
-    
-    val icfAchievement8 = mapOf(
-        Language.ENGLISH to "Championed adoption of 12-Factor Application standards and modern architectural patterns",
-        Language.SPANISH to "Promovíestándares de Aplicación 12-Factor y patrones arquitectónicos modernos"
-    )
-    
-    val icfAchievement9 = mapOf(
-        Language.ENGLISH to "Implemented Service Oriented Architecture using enterprise design patterns",
-        Language.SPANISH to "Implementé Arquitectura Orientada a Servicios usando patrones de diseño empresariales"
-    )
-    
-    val icfAchievement10 = mapOf(
-        Language.ENGLISH to "Coordinated cross-team development of platform features serving multiple clients",
-        Language.SPANISH to "Coordiné desarrollo entre equipos de características de plataforma sirviendo múltiples clientes"
-    )
-    
-    val icfAchievement11 = mapOf(
-        Language.ENGLISH to "Mentored and managed junior developers during feature implementation",
-        Language.SPANISH to "Mentoreé y gestioné desarrolladores junior durante implementación de características"
+        Language.ENGLISH to "Mentored junior developers through code reviews, architectural guidance, and hands-on feature development",
+        Language.SPANISH to "Mentoreé desarrolladores junior a través de revisiones de código, guía arquitectónica y desarrollo práctico de características"
     )
     
     // Perficient Work Experience
@@ -451,13 +426,13 @@ object Strings {
     
     // Education
     val mastersDegree = mapOf(
-        Language.ENGLISH to "Master's Degree: Information Technologies Administration",
-        Language.SPANISH to "Maestría: Administración de Tecnologías de la Información"
+        Language.ENGLISH to "Master's Degree: Information Technologies Administration | 2011",
+        Language.SPANISH to "Maestría: Administración de Tecnologías de la Información | 2011"
     )
     
     val bachelorsDegree = mapOf(
-        Language.ENGLISH to "Bachelor's Degree: Computer Systems Engineering",
-        Language.SPANISH to "Licenciatura: Ingeniería en Sistemas Computacionales"
+        Language.ENGLISH to "Bachelor's Degree: Computer Systems Engineering | 2008",
+        Language.SPANISH to "Licenciatura: Ingeniería en Sistemas Computacionales | 2008"
     )
     
     val itesmLocation = mapOf(
@@ -541,8 +516,8 @@ object Strings {
     )
     
     val geographicExperienceDescription = mapOf(
-        Language.ENGLISH to "Extensive professional experience working across North America:",
-        Language.SPANISH to "Amplia experiencia profesional trabajando en América del Norte:"
+        Language.ENGLISH to "Extensive professional experience working across North America, Europe, and Japan:",
+        Language.SPANISH to "Amplia experiencia profesional trabajando en América del Norte, Europa y Japón:"
     )
 
     val toggleLanguage = mapOf(

@@ -109,7 +109,7 @@ private fun DownloadMenu() {
                             pendingDownload = if (language == Language.ENGLISH) {
                                 "/AlexandroBlanco-Resume.pdf"
                             } else {
-                                "/AlexandroBlanco-Resume-ES.pdf"
+                                "/AlexandroBlanco-Resume.pdf"
                             }
                             showChallenge = true
                             showDropdown = false

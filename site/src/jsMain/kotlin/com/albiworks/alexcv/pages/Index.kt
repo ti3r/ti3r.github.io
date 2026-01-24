@@ -228,9 +228,10 @@ fun HomePage() {
             Div(AlternateSectionContentStyle.toAttrs()) {
                 H2(SectionTitleStyle.toAttrs()) { Text(Strings.workExperienceTitle[language].orEmpty()) }
 
+                var expandedSection by remember { mutableStateOf(1) }
                 // Amazon
                 CollapsibleJobEntry(
-                    isExpanded = true,
+                    isExpanded = expandedSection == 1,
                     company = Strings.amazonCompany[language].orEmpty(),
                     jobTitle = Strings.amazonJobTitle[language].orEmpty(),
                     dates = Strings.amazonDates[language].orEmpty(),
@@ -246,12 +247,14 @@ fun HomePage() {
                         Strings.amazonAchievement7[language].orEmpty()
                     ),
                     technologies = "AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK",
-                    language = language
+                    language = language,
+                    sectionNo = 1,
+                    onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },
                 )
 
                 // ICF (combined)
                 CollapsibleJobEntry(
-                    isExpanded = false,
+                    isExpanded = expandedSection == 2,
                     company = Strings.icfCompany[language].orEmpty(),
                     jobTitle = Strings.icfJobTitle[language].orEmpty(),
                     dates = Strings.icfDates[language].orEmpty(),
@@ -263,20 +266,17 @@ fun HomePage() {
                         Strings.icfAchievement3[language].orEmpty(),
                         Strings.icfAchievement4[language].orEmpty(),
                         Strings.icfAchievement5[language].orEmpty(),
-                        Strings.icfAchievement6[language].orEmpty(),
-                        Strings.icfAchievement7[language].orEmpty(),
-                        Strings.icfAchievement8[language].orEmpty(),
-                        Strings.icfAchievement9[language].orEmpty(),
-                        Strings.icfAchievement10[language].orEmpty(),
-                        Strings.icfAchievement11[language].orEmpty()
+                        Strings.icfAchievement6[language].orEmpty()
                     ),
-                    technologies = "Kafka, Elasticsearch, OpenShift, Kubernetes, Docker, Spring Boot, Java, Spring Framework, Microservices, SOA, Linux/Unix, Shell Scripting, GitLab CI, Jenkins, Bamboo, Maven, Git, Mockito, SonarQube",
-                    language = language
+                    technologies = "Kafka, Elasticsearch, Spring Boot, Microservices, Kubernetes, OpenShift, Docker, Helm, Java, Linux/Unix, Jenkins, Maven, Git",
+                    language = language,
+                    sectionNo = 2,
+                    onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },
                 )
 
                 // Perficient
                 CollapsibleJobEntry(
-                    isExpanded = false,
+                    isExpanded = expandedSection == 3,
                     company = Strings.perficientCompany[language].orEmpty(),
                     jobTitle = Strings.perficientJobTitle[language].orEmpty(),
                     dates = Strings.perficientDates[language].orEmpty(),
@@ -288,12 +288,14 @@ fun HomePage() {
                         Strings.perficientAchievement3[language].orEmpty()
                     ),
                     technologies = "Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle",
-                    language = language
+                    language = language,
+                    sectionNo = 3,
+                    onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },
                 )
 
                 // OLSON
                 CollapsibleJobEntry(
-                    isExpanded = false,
+                    isExpanded = expandedSection == 4,
                     company = Strings.olsonCompany[language].orEmpty(),
                     jobTitle = Strings.olsonJobTitle[language].orEmpty(),
                     dates = Strings.olsonDates[language].orEmpty(),
@@ -307,12 +309,14 @@ fun HomePage() {
                         Strings.olsonAchievement5[language].orEmpty()
                     ),
                     technologies = "Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git",
-                    language = language
+                    language = language,
+                    sectionNo = 4,
+                    onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },
                 )
 
                 // Best Buy
                 CollapsibleJobEntry(
-                    isExpanded = false,
+                    isExpanded = expandedSection == 5,
                     company = Strings.bestBuyCompany[language].orEmpty(),
                     jobTitle = Strings.bestBuyJobTitle[language].orEmpty(),
                     dates = Strings.bestBuyDates[language].orEmpty(),
@@ -325,7 +329,9 @@ fun HomePage() {
                         Strings.bestBuyAchievement4[language].orEmpty()
                     ),
                     technologies = "Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven",
-                    language = language
+                    language = language,
+                    sectionNo = 5,
+                    onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },
                 )
             }
         }
@@ -452,25 +458,25 @@ fun HomePage() {
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .toAttrs()
                         ) { Text(Strings.languagesTitle[language].orEmpty()) }
-                        P { Text("Java, Kotlin, TypeScript, Python, Groovy, Swift, SQL") }
+                        P { Text("Java, Kotlin, TypeScript, Python, Swift, SQL") }
 
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
                         ) { Text(Strings.backendTitle[language].orEmpty()) }
-                        P { Text("Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, JSP, Swagger") }
+                        P { Text("Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, Event-Driven Architecture") }
 
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
                         ) { Text(Strings.frontendTitle[language].orEmpty()) }
-                        P { Text("React, Node.js, TypeScript, JavaScript, AngularJS, JQuery") }
+                        P { Text("React, Node.js, TypeScript, JavaScript") }
 
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
                         ) { Text(Strings.mobileTitle[language].orEmpty()) }
-                        P { Text("Android, iOS, Jetpack Compose, Kotlin, Swift") }
+                        P { Text("Android, iOS, Jetpack Compose, SwiftUI, Kotlin, Swift") }
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
@@ -483,19 +489,19 @@ fun HomePage() {
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .toAttrs()
                         ) { Text(Strings.cloudInfrastructureTitle[language].orEmpty()) }
-                        P { Text("AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), AWS CDK, Kubernetes, OpenShift, Docker, Linux/Unix, Windows, Shell Scripting") }
+                        P { Text("AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), Kubernetes, OpenShift, Docker, Helm, Linux/Unix") }
 
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
                         ) { Text(Strings.databasesTitle[language].orEmpty()) }
-                        P { Text("DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL, PL/SQL") }
+                        P { Text("DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL") }
 
                         H3(
                             Modifier.fontSize(1.1.cssRem).fontWeight(FontWeight.SemiBold).margin(bottom = 0.5.cssRem)
                                 .margin(top = 1.cssRem).toAttrs()
                         ) { Text(Strings.devopsTestingTitle[language].orEmpty()) }
-                        P { Text("CI/CD, GitLab CI, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, SonarQube, Postman, Cucumber, Spock, TDD/BDD") }
+                        P { Text("CI/CD, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, TDD/BDD") }
                     }
                 }
             }

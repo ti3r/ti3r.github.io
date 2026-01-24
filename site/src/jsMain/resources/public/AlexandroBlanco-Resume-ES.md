@@ -1,180 +1,112 @@
 # Alexandro Blanco Santana
 
-**Ingeniero de Software Full Stack Senior**
-
-📧 ablanco.java@yahoo.com | 📍 Minneapolis, MN  
-🔗 [LinkedIn](https://www.linkedin.com/in/alexandro-blanco-santana/) | 💻 [GitHub](https://github.com/ti3r)
-
----
+## Información de Contacto
+- **Nombre:** Alexandro Blanco Santana
+- **Email:** ablanco.java@yahoo.com
+- **Ubicación:** Minneapolis, MN
+- **Sitio Web:** https://ti3r.github.io/
+- **LinkedIn:** https://www.linkedin.com/in/alexandro-blanco-santana/
+- **GitHub:** https://github.com/ti3r
 
 ## Perfil
 
-Ingeniero de Software Full Stack Senior con más de 15 años de experiencia construyendo aplicaciones empresariales escalables e infraestructura en la nube. Actualmente en Amazon, diseñando servicios backend y soluciones móviles para Robótica AI y Servicios de Transporte.
+Ingeniero de Software Full Stack Senior con 17 años de experiencia arquitectando y entregando soluciones cloud de extremo a extremo. Actualmente en Amazon, construyendo aplicaciones móviles y servicios backend que impulsan la red logística de milla media de Amazon Transportation Services en Norteamérica, Europa y Japón.
 
-Experiencia en arquitectura de nube AWS, microservicios y desarrollo full-stack con Java/Kotlin, React y Node.js. Experiencia comprobada con contenedorización (Kubernetes, Docker, OpenShift), pipelines CI/CD y prácticas modernas de DevOps.
+Profunda experiencia en arquitectura serverless de AWS, desarrollo móvil (Android/iOS) y microservicios. Historial de diseño de sistemas escalables procesando millones de transacciones diarias, liderando iniciativas técnicas desde concepto hasta producción, y mentoreando equipos de ingeniería.
 
-Profesional orientado a resultados con historial comprobado liderando iniciativas técnicas, mentoreando equipos y entregando soluciones de alto impacto en entornos acelerados y sensibles al tiempo.
-
----
+Especializado en: Arquitectura cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo móvil (Kotlin, Swift, Jetpack Compose) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Diseño de microservicios
 
 ## Experiencia Laboral
 
 ### Amazon, Minneapolis MN
 **Ingeniero de Software L5** | Marzo 2021 - Presente  
-*Robótica AI y Servicios de Transporte de Amazon (ATS)*
+*Servicios de Transporte de Amazon (ATS)*
 
-Arquitecto y desarrollo de servicios backend y aplicaciones móviles que soportan la red de transporte de media milla de Amazon y sistemas de visión por computadora de almacenes. Lidero el diseño de infraestructura, mentoreo ingenieros y dirijo decisiones técnicas para servicios que manejan millones de transacciones diarias.
+Arquitecto y desarrollo soluciones móviles y backend de extremo a extremo para la red de transporte de milla media de Amazon sirviendo a más de 50,000 socios de transporte en Norteamérica, Europa y Japón. Contribuidor clave en un equipo de 13 ingenieros, mentoreando ingenieros junior (50%+ del equipo) y dirigiendo decisiones técnicas para servicios que procesan millones de transacciones diarias.
 
 **Logros Principales:**
-- Diseñé e implementé aplicaciones móviles Android e iOS que permiten a los socios de transporte descubrir y ejecutar cargas de productos a través de la red de media milla de Amazon
-- Construí servicios backend escalables usando AWS Lambda, DynamoDB y API Gateway que soportan usuarios internos y externos
-- Desarrollé y mantuve herramientas internas para desarrolladores usando Node.js, React y TypeScript
-- Desarrollé infraestructura AWS CDK implementando monitoreo integral, alarmas y alertas para cumplir con los requisitos de SLA
-- Arquitecté soluciones de visión por computadora y ML para detección de proximidad COVID-19 en centros de distribución de Amazon
-- Lideré revisiones de diseño y mentoreé ingenieros junior a través de revisiones de código y guía técnica
-- Establecí pipelines CI/CD asegurando cumplimiento de integración continua y excelencia operacional
+- Arquitecto y construyo servicios backend serverless escalables usando AWS Lambda, DynamoDB y API Gateway, procesando millones de transacciones diarias para emparejamiento de cargas en tiempo real, operaciones de socios y orquestación logística
+- Diseño e implemento infraestructura AWS CDK con monitoreo integral, alarmas y alertas automatizadas asegurando 99.9% de cumplimiento de SLA en despliegues multi-región
+- Orquesté la migración de operaciones de la UE de Dublín a España, re-arquitectando servicios backend y pipelines de datos para asegurar cero tiempo de inactividad y transición sin problemas para socios de transporte
+- Establecí pipelines CI/CD con pruebas automatizadas y estrategias de despliegue, reduciendo el tiempo de ciclo de lanzamiento en 40% mientras mantengo estabilidad de producción
+- Lidero la modernización de la aplicación móvil Relay (calificación de 4.7 estrellas en ambas tiendas de aplicaciones), migrando Android a Jetpack Compose e iOS a SwiftUI mientras apoyo a más de 50,000 usuarios activos
+- Apoyo y mejoro aplicaciones móviles de producción que permiten a socios de transporte descubrir y ejecutar cargas de productos a través de la red logística de Amazon
+- Lidero revisiones de diseño y mentoría técnica para ingenieros junior a través de revisiones de código, programación en pareja y guía arquitectónica
 
-**Tecnologías:** AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK
-
----
+**Tecnologías:** AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch, EventBridge, Step Functions), Java, Kotlin, Node.js, TypeScript, Spring Boot, Android, iOS, Jetpack Compose, SwiftUI, React
 
 ### ICF (Olson/Next), Minneapolis MN
-**Arquitecto de Software Jr. (Promovido Septiembre 2017) | Ingeniero de Software Sr.** | Julio 2016 - Marzo 2021  
-*Plataforma Tally*
+**Arquitecto de Software Jr.** (Promovido Septiembre 2019) | **Ingeniero de Software Sr.** | Julio 2016 - Marzo 2021  
+*Plataforma Tally - Gestión de Lealtad y Recompensas*
 
-Lideré la evolución arquitectónica de la plataforma de marketing empresarial durante 4.5 años, progresando de ingeniero senior a arquitecto. Impulsé la adopción de tecnologías modernas de nube, arquitectura de microservicios y establecí estándares técnicos en los equipos de ingeniería.
+Lideré la evolución arquitectónica de la plataforma empresarial de lealtad y recompensas procesando millones de transacciones diarias para clientes de hospitalidad global incluyendo Hilton y Hyatt. Progresé de ingeniero senior a arquitecto, impulsando la modernización de arquitectura monolítica a microservicios nativos de nube.
 
 **Logros Principales:**
-- Arquitecté plataforma de próxima generación usando Kafka, Elasticsearch, OpenShift y Spring Boot
-- Diseñé e implementé arquitectura de microservicios escalable mejorando el rendimiento y habilitando escalamiento horizontal
-- Desplegué y gestioné aplicaciones en contenedores usando Kubernetes, Docker y OpenShift en entornos Linux
-- Establecí pipelines CI/CD usando Jenkins, GitLab CI y Bamboo con pruebas automatizadas y despliegue
-- Implementé framework de automatización de pruebas usando Mockito, JUnit y SonarQube para aseguramiento de calidad de código
-- Desarrollé scripts de shell Linux para automatización, monitoreo y procesos de despliegue
-- Lideré la migración de arquitectura monolítica a microservicios nativos de nube
-- Promoví estándares de Aplicación 12-Factor y patrones arquitectónicos modernos
-- Implementé Arquitectura Orientada a Servicios usando patrones de diseño empresariales
-- Coordiné desarrollo entre equipos de características de plataforma sirviendo múltiples clientes
-- Mentoreé y gestioné desarrolladores junior durante implementación de características
+- Arquitecté y ejecuté la migración de aplicación monolítica a arquitectura de microservicios basada en eventos usando Kafka, Spring Boot y OpenShift, habilitando procesamiento asíncrono de transacciones y escalamiento horizontal
+- Diseñé estrategia de despliegue en contenedores usando Kubernetes, Docker y Helm charts en entornos Linux, reduciendo tiempo de despliegue y mejorando confiabilidad del sistema
+- Establecí pipelines CI/CD usando Jenkins y Bamboo con pruebas automatizadas (JUnit, Mockito) y compuertas de calidad de código (SonarQube)
+- Implementé Arquitectura Orientada a Servicios siguiendo principios de Aplicación 12-Factor y patrones de diseño empresariales
+- Lideré coordinación entre equipos para características de plataforma sirviendo múltiples clientes empresariales
+- Mentoreé desarrolladores junior a través de revisiones de código, guía arquitectónica y desarrollo práctico de características
 
-**Tecnologías:** Kafka, Elasticsearch, OpenShift, Kubernetes, Docker, Spring Boot, Java, Spring Framework, Microservices, SOA, Linux/Unix, Shell Scripting, GitLab CI, Jenkins, Bamboo, Maven, Git, Mockito, SonarQube
-
----
+**Tecnologías:** Kafka, Elasticsearch, Spring Boot, Microservicios, Kubernetes, OpenShift, Docker, Helm, Java, Linux/Unix, Jenkins, Maven, Git
 
 ### Perficient, Minneapolis MN
-**Ingeniero de Software Sr.** | Julio 2015 - Julio 2016  
-*Proyectos BestBuy y CaringBridge*
+**Ingeniero de Software Sr.** | Julio 2015 - Julio 2016
 
-Desarrollé APIs RESTful para sistemas financieros y gestión de perfiles sirviendo aplicaciones web y móviles.
+Desarrollé APIs RESTful para sistemas financieros de Best Buy y plataforma de gestión de perfiles de CaringBridge usando Spring Boot, Spring Data, Oracle y MongoDB.
 
-**Logros Principales:**
-- Construí APIs RESTful entregando datos financieros para sistemas de toma de decisiones de BestBuy
-- Desarrollé APIs de gestión de perfiles y sitios para la plataforma CaringBridge
-- Implementé servicios usando Spring Boot, Spring Data, Oracle y MongoDB
+### Experiencia Anterior
 
-**Tecnologías:** Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle
+**Ingeniero de Software Sr.** | OLSON, Minneapolis MN | Junio 2013 - Julio 2015  
+Desarrollé servicios web SOAP y sitio web de gestión para el programa de lealtad Amtrak Guest Rewards usando Spring Framework, Hibernate, Node.js y AngularJS.
 
----
+**Desarrollador J2EE** | Best Buy, Richfield MN | Abril 2012 - Julio 2013  
+Construí APIs RESTful para plataforma de comercio electrónico habilitando integración de socios con sistemas de colocación de pedidos y compra de productos.
 
-### OLSON, Minneapolis MN
-**Ingeniero de Software Sr.** | Junio 2013 - Julio 2015  
-*Programa de Recompensas Amtrak*
-
-Desarrollé y mantuve servicios backend del programa de lealtad de Amtrak y sitio web de gestión.
-
-**Logros Principales:**
-- Construí servicios web SOAP usando Spring Framework e Hibernate
-- Mantuve y mejoré sitio web de gestión usando Node.js y AngularJS
-- Implementé trabajos Spring Batch para procesamiento de datos
-- Lideré migración de SVN a Git en múltiples proyectos
-- Desarrollé integración de mensajería JMS con sistemas de colas externos
-
-**Tecnologías:** Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git
-
----
-
-### Best Buy, Richfield MN
-**Desarrollador J2EE** | Abril 2012 - Julio 2013  
-*API de Comercio*
-
-Desarrollé servicios web RESTful habilitando integración de socios con la plataforma de comercio electrónico de BestBuy.
-
-**Logros Principales:**
-- Construí APIs REST para colocación de órdenes y compra de productos
-- Implementé pruebas automatizadas BDD usando Cucumber, Groovy y Java
-- Desarrollé interfaces con sistemas de impuestos, precios y cumplimiento
-- Establecí prácticas CI usando Hudson, Jenkins y Maven
-
-**Tecnologías:** Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven
-
----
-
-## Experiencia Anterior
-
-### AutoZone (2011-2012) - Programador C++/Java
-Mantuve catálogo electrónico y aplicaciones de tienda usando Java, Spring, C++ y QT Framework
-
-### Labinal de Mexico (2008-2010) - Analista de Sistemas/Programador
-Desarrollé aplicaciones web Java EE y aplicaciones de escritorio .NET
-
----
+**Experiencia Adicional:** Programador C++/Java en AutoZone (2011-2012) | Analista de Sistemas/Programador en Labinal de México (2008-2010)
 
 ## Experiencia Freelance
 
 ### Albiworks USA, Portland OR
 **Ingeniero de Software Principal** | 2024 - Presente
 
-Desarrollé aplicación de escritorio conectándose a hardware personalizado para pruebas eléctricas automatizadas de prototipos de productos PCB para Polaris y TrailTech. Lanzado exitosamente en mayo de 2025 y desplegado en líneas de producción en China.
+Desarrollé aplicación de escritorio para pruebas eléctricas automatizadas de prototipos de PCB para Polaris y TrailTech. La aplicación se interfaza con hardware FTDI personalizado para realizar pruebas de aseguramiento de calidad automatizadas. Desplegada exitosamente en líneas de producción en China (Mayo 2025).
 
-**Tecnologías:** C#, .NET 8.0, FTDI Chips and Interfaces
+**Tecnologías:** C#, .NET 8.0, Interfaces de Hardware FTDI
 
 ### Albiworks, Chihuahua, México
 **CIO y Arquitecto de Software** | 2014 - Presente
 
-Arquitecté y desarrollé plataforma de facturación basada en la nube para el mercado mexicano (facturas digitales CFDi). Plataforma lanzada en 2014, actualmente en modo de mantenimiento con actualizaciones periódicas y soporte.
+Arquitecté y desarrollé plataforma de facturación basada en la nube para el mercado mexicano soportando cumplimiento de CFDi (factura digital). Plataforma lanzada en 2014, sirviendo base de clientes activa con actualizaciones de características continuas y soporte técnico.
 
-**Tecnologías:** Java, JAX-RS, MongoDB, REST APIs, Maven, Jenkins
-
----
+**Tecnologías:** Java, JAX-RS, MongoDB, APIs REST, Maven, Jenkins
 
 ## Educación
 
-**Maestría: Administración de Tecnologías de la Información**  
+**Maestría: Administración de Tecnologías de la Información** | 2011  
 Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM), Chihuahua, México
 
-**Licenciatura: Ingeniería en Sistemas Computacionales**  
+**Licenciatura: Ingeniería en Sistemas Computacionales** | 2008  
 Instituto Tecnológico de Chihuahua No. II (ITCH II), Chihuahua, México
 
----
+## Idiomas y Experiencia Geográfica
 
-## Experiencia Geográfica
-
-Amplia experiencia profesional trabajando en América del Norte:
-- **Canadá:** Colaboración remota
-- **Estados Unidos:** Minneapolis, MN
-- **México:** Chihuahua, MX
-
----
+**Idiomas:** Inglés (Fluido), Español (Nativo)  
+**Experiencia Profesional:** América del Norte (Estados Unidos, Canadá, México) • Europa • Japón
 
 ## Habilidades Técnicas
 
-**Lenguajes**  
-Java, Kotlin, TypeScript, Python, Groovy, Swift, SQL
+**Nube e Infraestructura:** AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), Kubernetes, OpenShift, Docker, Helm, Linux/Unix
 
-**Backend**  
-Java, Kotlin, Spring Boot, Spring Framework, Kafka, Microservices, REST APIs, JSP, Swagger
+**Desarrollo Backend:** Java, Kotlin, Spring Boot, Spring Framework, Node.js, Microservicios, APIs REST, Kafka, Arquitectura Basada en Eventos
 
-**Frontend**  
-React, Node.js, TypeScript, JavaScript, AngularJS, JQuery
+**Desarrollo Móvil:** Android, iOS, Jetpack Compose, SwiftUI, Kotlin, Swift
 
-**Móvil**  
-Android, iOS, Jetpack Compose, Kotlin, Swift
+**Desarrollo Frontend:** React, TypeScript, JavaScript
 
-**Nube e Infraestructura**  
-AWS (Lambda, DynamoDB, API Gateway, S3, CloudWatch, CDK, EventBridge, Step Functions, SQS, SNS, IAM, CloudFormation), AWS CDK, Kubernetes, OpenShift, Docker, Linux/Unix, Windows, Shell Scripting
+**Bases de Datos:** DynamoDB, PostgreSQL, MySQL, MongoDB, Elasticsearch, Oracle
 
-**Bases de Datos**  
-DynamoDB, PostgreSQL, MySQL, Oracle, MongoDB, Elasticsearch, SQL, PL/SQL
+**DevOps y Pruebas:** CI/CD, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, TDD/BDD
 
-**DevOps y Pruebas**  
-CI/CD, GitLab CI, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, SonarQube, Postman, Cucumber, Spock, TDD/BDD
+**Lenguajes de Programación:** Java, Kotlin, TypeScript, JavaScript, Python, Swift, SQL
