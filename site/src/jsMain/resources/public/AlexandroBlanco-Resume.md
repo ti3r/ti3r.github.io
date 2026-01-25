@@ -93,7 +93,7 @@ Chihuahua's Institute of Technology No. II (ITCH II), Chihuahua, Mexico
 ## Languages & Geographic Experience
 
 **Languages:** English (Fluent), Spanish (Native)  
-**Professional Experience:** North America (United States, Canada, Mexico) • Europe • Japan
+**Professional Experience:** North America (United States, Canada, Mexico)
 
 ## Technical Skills
 

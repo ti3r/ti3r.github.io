@@ -516,8 +516,8 @@ object Strings {
     )
     
     val geographicExperienceDescription = mapOf(
-        Language.ENGLISH to "Extensive professional experience working across North America, Europe, and Japan:",
-        Language.SPANISH to "Amplia experiencia profesional trabajando en América del Norte, Europa y Japón:"
+        Language.ENGLISH to "Extensive professional experience working across North America:",
+        Language.SPANISH to "Amplia experiencia profesional trabajando en América del Norte:"
     )
 
     val toggleLanguage = mapOf(

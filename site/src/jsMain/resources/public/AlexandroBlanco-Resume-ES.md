@@ -93,7 +93,7 @@ Instituto Tecnológico de Chihuahua No. II (ITCH II), Chihuahua, México
 ## Idiomas y Experiencia Geográfica
 
 **Idiomas:** Inglés (Fluido), Español (Nativo)  
-**Experiencia Profesional:** América del Norte (Estados Unidos, Canadá, México) • Europa • Japón
+**Experiencia Profesional:** América del Norte (Estados Unidos, Canadá, México)
 
 ## Habilidades Técnicas
 
