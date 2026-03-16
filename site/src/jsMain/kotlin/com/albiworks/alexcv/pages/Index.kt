@@ -244,9 +244,10 @@ fun HomePage() {
                         Strings.amazonAchievement4[language].orEmpty(),
                         Strings.amazonAchievement5[language].orEmpty(),
                         Strings.amazonAchievement6[language].orEmpty(),
-                        Strings.amazonAchievement7[language].orEmpty()
+                        Strings.amazonAchievement7[language].orEmpty(),
+                        Strings.amazonAchievement8[language].orEmpty()
                     ),
-                    technologies = "AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AWS CDK",
+                    technologies = "AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch), Java, Kotlin, Android, iOS, Node.js, React, TypeScript, Spring Boot, Kafka, AI-Assisted Development (Amazon Q / Kiro)",
                     language = language,
                     sectionNo = 1,
                     onExpandToggle = { no, expanded -> if (expanded) expandedSection = no else expandedSection = 0    },

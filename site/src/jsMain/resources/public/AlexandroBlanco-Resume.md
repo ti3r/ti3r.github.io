@@ -10,7 +10,7 @@
 
 ## Profile
 
-Senior Full Stack Software Engineer with 17 years of experience architecting and delivering end-to-end cloud solutions. Currently at Amazon, building mobile applications and backend services that power Amazon Transportation Services' middle-mile logistics network across North America, Europe, and Japan.
+Senior Full Stack Software Engineer and Cloud Architect with 17 years of experience delivering end-to-end solutions at enterprise scale. Most recently, played a key role building high-performance mobile applications and serverless backend services that power Amazon Transportation Services' middle-mile logistics network across North America, Europe, and Japan.
 
 Deep expertise in AWS serverless architecture, mobile development (Android/iOS), and microservices. Track record of designing scalable systems processing millions of daily transactions, leading technical initiatives from concept to production, and mentoring engineering teams.
 
@@ -19,24 +19,26 @@ Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) â€
 ## Work Experience
 
 ### Amazon, Minneapolis MN
-**Software Engineer L5** | March 2021 - Present  
+**Software Engineer L5** | March 2021 - March 2026  
 *Amazon Transportation Services (ATS)*
 
-Architect and develop end-to-end mobile and backend solutions for Amazon's middle-mile transportation network serving 50,000+ transportation partners across North America, Europe, and Japan. Key contributor on a 13-engineer team, mentoring junior engineers (50%+ of team) and driving technical decisions for services processing millions of daily transactions.
+Architected and developed end-to-end mobile and backend solutions for Amazon's middle-mile transportation network serving 50,000+ transportation partners across North America, Europe, and Japan. Key contributor on a 13-engineer team, mentoring junior engineers (50%+ of team) and driving technical decisions for services processing millions of daily transactions.
 
 **Key Achievements:**
-- Architect and build scalable serverless backend services using AWS Lambda, DynamoDB, and API Gateway, processing millions of daily transactions for real-time load matching, partner operations, and logistics orchestration
-- Design and implement AWS CDK infrastructure with comprehensive monitoring, alarms, and automated alerts ensuring 99.9% SLA compliance across multi-region deployments
+- Architected and built scalable serverless backend services using AWS Lambda, DynamoDB, and API Gateway, processing millions of daily transactions for real-time load matching, partner operations, and logistics orchestration
+- Designed and implemented AWS CDK infrastructure with comprehensive monitoring, alarms, and automated alerts ensuring 99.9% SLA compliance across multi-region deployments
 - Orchestrated migration of EU operations from Dublin to Spain, re-architecting backend services and data pipelines to ensure zero downtime and seamless transition for transportation partners
 - Established CI/CD pipelines with automated testing and deployment strategies, reducing release cycle time by 40% while maintaining production stability
-- Lead modernization of Relay mobile application (4.7-star rating on both app stores), migrating Android to Jetpack Compose and iOS to SwiftUI while supporting 50,000+ active users
-- Support and enhance production mobile applications enabling transportation partners to discover and execute product loads across Amazon's logistics network
-- Lead design reviews and technical mentorship for junior engineers through code reviews, pair programming, and architectural guidance
+- Led modernization of Relay mobile application (4.7-star rating on both app stores), migrating Android to Jetpack Compose and iOS to SwiftUI while supporting 50,000+ active users
+- Provided ongoing support and enhancement for production mobile applications enabling transportation partners to discover and execute product loads across Amazon's logistics network
+- Led design reviews and technical mentorship for junior engineers through code reviews, pair programming, and architectural guidance
+- Leveraged AI-assisted development (Amazon Q / Kiro) to accelerate delivery of mobile and backend features, improve code quality, and streamline the development lifecycle
 
-**Technologies:** AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch, EventBridge, Step Functions), Java, Kotlin, Node.js, TypeScript, Spring Boot, Android, iOS, Jetpack Compose, SwiftUI, React
+**Technologies:** AWS (Lambda, DynamoDB, API Gateway, CDK, S3, CloudWatch, EventBridge, Step Functions), Java, Kotlin, Node.js, TypeScript, Spring Boot, Android, iOS, Jetpack Compose, SwiftUI, React, AI-Assisted Development (Amazon Q / Kiro)
 
 ### ICF (Olson/Next), Minneapolis MN
-**Jr. Software Architect** (Promoted September 2019) | **Sr. Software Engineer** | July 2016 - March 2021  
+**Jr. Software Architect** | September 2019 - March 2021  
+**Sr. Software Engineer** | July 2016 - September 2019  
 *Tally Platform - Loyalty & Rewards Management*
 
 Led architectural evolution of enterprise loyalty and rewards platform processing millions of daily transactions for global hospitality clients including Hilton and Hyatt. Progressed from senior engineer to architect, driving modernization from monolithic architecture to cloud-native microservices.
@@ -71,7 +73,7 @@ Built RESTful APIs for e-commerce platform enabling partner integration with ord
 ### Albiworks USA, Portland OR
 **Principal Software Engineer** | 2024 - Present
 
-Developed desktop application for automated electrical testing of PCB prototypes for Polaris and TrailTech. Application interfaces with custom FTDI hardware to perform automated quality assurance testing. Successfully deployed to production lines in China (May 2025).
+Developed desktop application for automated electrical testing of PCB prototypes for Polaris and TrailTech. Application interfaces with custom FTDI hardware to perform automated quality assurance testing. Successfully deployed to production lines in China in May 2025.
 
 **Technologies:** C#, .NET 8.0, FTDI Hardware Interfaces
 

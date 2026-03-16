@@ -46,8 +46,8 @@ object Strings {
     )
     
     val profileParagraph1 = mapOf(
-        Language.ENGLISH to "Senior Full Stack Software Engineer with 17 years of experience architecting and delivering end-to-end cloud solutions. Currently at Amazon, building mobile applications and backend services that power Amazon Transportation Services' middle-mile logistics network across North America, Europe, and Japan.",
-        Language.SPANISH to "Ingeniero de Software Full Stack Senior con 17 años de experiencia arquitectando y entregando soluciones cloud de extremo a extremo. Actualmente en Amazon, construyendo aplicaciones móviles y servicios backend que impulsan la red logística de milla media de Amazon Transportation Services en Norteamérica, Europa y Japón."
+        Language.ENGLISH to "Senior Full Stack Software Engineer and Cloud Architect with 17 years of experience delivering end-to-end solutions at enterprise scale. Most recently, played a key role building high-performance mobile applications and serverless backend services that power Amazon Transportation Services' middle-mile logistics network across North America, Europe, and Japan.",
+        Language.SPANISH to "Ingeniero de Software Full Stack Senior y Arquitecto Cloud con 17 años de experiencia entregando soluciones de extremo a extremo a escala empresarial. Más recientemente, jugó un papel clave construyendo aplicaciones móviles de alto rendimiento y servicios backend serverless que impulsan la red logística de milla media de Amazon Transportation Services en Norteamérica, Europa y Japón."
     )
     
     val profileParagraph2 = mapOf(
@@ -56,8 +56,8 @@ object Strings {
     )
     
     val profileParagraph3 = mapOf(
-        Language.ENGLISH to "Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile development (Kotlin, Swift, Jetpack Compose) • Infrastructure as Code (AWS CDK) • CI/CD automation • Microservices design",
-        Language.SPANISH to "Especializado en: Arquitectura cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo móvil (Kotlin, Swift, Jetpack Compose) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Diseño de microservicios"
+        Language.ENGLISH to "Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile development (Kotlin, Swift, Jetpack Compose) • Infrastructure as Code (AWS CDK) • CI/CD automation • Microservices design • AI-Assisted Development (Amazon Q / Kiro)",
+        Language.SPANISH to "Especializado en: Arquitectura cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo móvil (Kotlin, Swift, Jetpack Compose) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Diseño de microservicios • Desarrollo Asistido por IA (Amazon Q / Kiro)"
     )
     
     // Work Experience Section
@@ -88,8 +88,8 @@ object Strings {
     )
     
     val amazonDates = mapOf(
-        Language.ENGLISH to "March 2021 - Present",
-        Language.SPANISH to "Marzo 2021 - Presente"
+        Language.ENGLISH to "March 2021 - March 2026",
+        Language.SPANISH to "Marzo 2021 - Marzo 2026"
     )
     
     val amazonProject = mapOf(
@@ -98,18 +98,18 @@ object Strings {
     )
     
     val amazonDescription = mapOf(
-        Language.ENGLISH to "Architect and develop end-to-end mobile and backend solutions for Amazon's middle-mile transportation network serving 50,000+ transportation partners across North America, Europe, and Japan. Key contributor on a 13-engineer team, mentoring junior engineers (50%+ of team) and driving technical decisions for services processing millions of daily transactions.",
-        Language.SPANISH to "Arquitecto y desarrollo soluciones móviles y backend de extremo a extremo para la red de transporte de milla media de Amazon sirviendo a más de 50,000 socios de transporte en Norteamérica, Europa y Japón. Contribuidor clave en un equipo de 13 ingenieros, mentoreando ingenieros junior (50%+ del equipo) y dirigiendo decisiones técnicas para servicios que procesan millones de transacciones diarias."
+        Language.ENGLISH to "Architected and developed end-to-end mobile and backend solutions for Amazon's middle-mile transportation network serving 50,000+ transportation partners across North America, Europe, and Japan. Key contributor on a 13-engineer team, mentoring junior engineers (50%+ of team) and driving technical decisions for services processing millions of daily transactions.",
+        Language.SPANISH to "Arquitecté y desarrollé soluciones móviles y backend de extremo a extremo para la red de transporte de milla media de Amazon sirviendo a más de 50,000 socios de transporte en Norteamérica, Europa y Japón. Contribuidor clave en un equipo de 13 ingenieros, mentoreando ingenieros junior (50%+ del equipo) y dirigiendo decisiones técnicas para servicios que procesan millones de transacciones diarias."
     )
     
     val amazonAchievement1 = mapOf(
-        Language.ENGLISH to "Architect and build scalable serverless backend services using AWS Lambda, DynamoDB, and API Gateway, processing millions of daily transactions for real-time load matching, partner operations, and logistics orchestration",
-        Language.SPANISH to "Arquitecto y construyo servicios backend serverless escalables usando AWS Lambda, DynamoDB y API Gateway, procesando millones de transacciones diarias para emparejamiento de cargas en tiempo real, operaciones de socios y orquestación logística"
+        Language.ENGLISH to "Architected and built scalable serverless backend services using AWS Lambda, DynamoDB, and API Gateway, processing millions of daily transactions for real-time load matching, partner operations, and logistics orchestration",
+        Language.SPANISH to "Arquitecté y construí servicios backend serverless escalables usando AWS Lambda, DynamoDB y API Gateway, procesando millones de transacciones diarias para emparejamiento de cargas en tiempo real, operaciones de socios y orquestación logística"
     )
     
     val amazonAchievement2 = mapOf(
-        Language.ENGLISH to "Design and implement AWS CDK infrastructure with comprehensive monitoring, alarms, and automated alerts ensuring 99.9% SLA compliance across multi-region deployments",
-        Language.SPANISH to "Diseño e implemento infraestructura AWS CDK con monitoreo integral, alarmas y alertas automatizadas asegurando 99.9% de cumplimiento de SLA en despliegues multi-región"
+        Language.ENGLISH to "Designed and implemented AWS CDK infrastructure with comprehensive monitoring, alarms, and automated alerts ensuring 99.9% SLA compliance across multi-region deployments",
+        Language.SPANISH to "Diseñé e implementé infraestructura AWS CDK con monitoreo integral, alarmas y alertas automatizadas asegurando 99.9% de cumplimiento de SLA en despliegues multi-región"
     )
     
     val amazonAchievement3 = mapOf(
@@ -123,18 +123,23 @@ object Strings {
     )
     
     val amazonAchievement5 = mapOf(
-        Language.ENGLISH to "Lead modernization of Relay mobile application (4.7-star rating on both app stores), migrating Android to Jetpack Compose and iOS to SwiftUI while supporting 50,000+ active users",
-        Language.SPANISH to "Lidero la modernización de la aplicación móvil Relay (calificación de 4.7 estrellas en ambas tiendas de aplicaciones), migrando Android a Jetpack Compose e iOS a SwiftUI mientras apoyo a más de 50,000 usuarios activos"
+        Language.ENGLISH to "Led modernization of Relay mobile application (4.7-star rating on both app stores), migrating Android to Jetpack Compose and iOS to SwiftUI while supporting 50,000+ active users",
+        Language.SPANISH to "Lideré la modernización de la aplicación móvil Relay (calificación de 4.7 estrellas en ambas tiendas de aplicaciones), migrando Android a Jetpack Compose e iOS a SwiftUI mientras apoyo a más de 50,000 usuarios activos"
     )
     
     val amazonAchievement6 = mapOf(
-        Language.ENGLISH to "Support and enhance production mobile applications enabling transportation partners to discover and execute product loads across Amazon's logistics network",
-        Language.SPANISH to "Apoyo y mejoro aplicaciones móviles de producción que permiten a socios de transporte descubrir y ejecutar cargas de productos a través de la red logística de Amazon"
+        Language.ENGLISH to "Provided ongoing support and enhancement for production mobile applications enabling transportation partners to discover and execute product loads across Amazon's logistics network",
+        Language.SPANISH to "Proporcioné apoyo continuo y mejoras para aplicaciones móviles de producción que permiten a socios de transporte descubrir y ejecutar cargas de productos a través de la red logística de Amazon"
     )
     
     val amazonAchievement7 = mapOf(
-        Language.ENGLISH to "Lead design reviews and technical mentorship for junior engineers through code reviews, pair programming, and architectural guidance",
-        Language.SPANISH to "Lidero revisiones de diseño y mentoría técnica para ingenieros junior a través de revisiones de código, programación en pareja y guía arquitectónica"
+        Language.ENGLISH to "Led design reviews and technical mentorship for junior engineers through code reviews, pair programming, and architectural guidance",
+        Language.SPANISH to "Lideré revisiones de diseño y mentoría técnica para ingenieros junior a través de revisiones de código, programación en pareja y guía arquitectónica"
+    )
+
+    val amazonAchievement8 = mapOf(
+        Language.ENGLISH to "Leveraged AI-assisted development (Amazon Q / Kiro) to accelerate delivery of mobile and backend features, improve code quality, and streamline the development lifecycle",
+        Language.SPANISH to "Aproveché el desarrollo asistido por IA (Amazon Q / Kiro) para acelerar la entrega de funcionalidades móviles y backend, mejorar la calidad del código, y optimizar el ciclo de vida del desarrollo"
     )
     
     // ICF Work Experience
