@@ -56,8 +56,8 @@ object Strings {
     )
     
     val profileParagraph3 = mapOf(
-        Language.ENGLISH to "Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile development (Kotlin, Swift, Jetpack Compose) • Infrastructure as Code (AWS CDK) • CI/CD automation • Microservices design • AI-Assisted Development (Amazon Q / Kiro)",
-        Language.SPANISH to "Especializado en: Arquitectura cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo móvil (Kotlin, Swift, Jetpack Compose) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Diseño de microservicios • Desarrollo Asistido por IA (Amazon Q / Kiro)"
+        Language.ENGLISH to "Core Competencies: Cloud-native Architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile Development (Kotlin, Swift, Jetpack Compose) • Backend & Microservices (Java, Spring Boot, Micronaut) • Infrastructure as Code (AWS CDK) • CI/CD Automation • Technical Leadership",
+        Language.SPANISH to "Competencias Principales: Arquitectura Cloud-native (AWS Lambda, DynamoDB, API Gateway) • Desarrollo Móvil (Kotlin, Swift, Jetpack Compose) • Backend y Microservicios (Java, Spring Boot, Micronaut) • Infraestructura como Código (AWS CDK) • Automatización CI/CD • Liderazgo Técnico"
     )
     
     // Work Experience Section
@@ -343,8 +343,8 @@ object Strings {
     )
     
     val autoZoneDescription = mapOf(
-        Language.ENGLISH to "Maintained electronic catalog and store applications using Java, Spring, C++, and QT Framework",
-        Language.SPANISH to "Mantuve catálogo electrónico y aplicaciones de tienda usando Java, Spring, C++ y QT Framework"
+        Language.ENGLISH to "Maintained electronic catalog and store applications.",
+        Language.SPANISH to "Mantuve catálogo electrónico y aplicaciones de tienda."
     )
     
     val labinalTitle = mapOf(
@@ -353,8 +353,8 @@ object Strings {
     )
     
     val labinalDescription = mapOf(
-        Language.ENGLISH to "Developed Java EE web applications and .NET desktop applications",
-        Language.SPANISH to "Desarrollé aplicaciones web Java EE y aplicaciones de escritorio .NET"
+        Language.ENGLISH to "Developed web and desktop applications.",
+        Language.SPANISH to "Desarrollé aplicaciones web y de escritorio."
     )
     
     // Freelance Experience

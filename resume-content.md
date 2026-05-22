@@ -14,7 +14,7 @@ Senior Full Stack Software Engineer and Cloud Architect with 17 years of experie
 
 Deep expertise in AWS serverless architecture, mobile development (Android/iOS), and microservices. Track record of designing scalable systems processing millions of daily transactions, leading technical initiatives from concept to production, and mentoring engineering teams.
 
-Specialized in: Cloud-native architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile development (Kotlin, Swift, Jetpack Compose) • Infrastructure as Code (AWS CDK) • CI/CD automation • Microservices design
+**Core Competencies:** Cloud-native Architecture (AWS Lambda, DynamoDB, API Gateway) • Mobile Development (Kotlin, Swift, Jetpack Compose) • Backend & Microservices (Java, Spring Boot, Micronaut) • Infrastructure as Code (AWS CDK) • CI/CD Automation • Technical Leadership
 
 ## Work Experience
 
@@ -56,17 +56,22 @@ Led architectural evolution of enterprise loyalty and rewards platform processin
 ### Perficient, Minneapolis MN
 **Sr. Software Engineer** | July 2015 - July 2016
 
-Developed RESTful APIs for Best Buy financial systems and CaringBridge profile management platform using Spring Boot, Spring Data, Oracle, and MongoDB.
+Developed RESTful APIs for Best Buy financial systems and CaringBridge profile management platform.
+**Technologies:** Java, Spring Boot, Spring Data, REST APIs, Oracle, MongoDB, Gradle
 
 ### Earlier Experience
 
 **Sr. Software Engineer** | OLSON, Minneapolis MN | June 2013 - July 2015  
-Developed SOAP web services and management website for Amtrak Guest Rewards loyalty program using Spring Framework, Hibernate, Node.js, and AngularJS.
+Developed SOAP web services and management website for Amtrak Guest Rewards loyalty program.
+**Technologies:** Java, Spring Framework, Spring Batch, Hibernate, SOAP, JMS, Node.js, AngularJS, Git
 
 **J2EE Developer** | Best Buy, Richfield MN | April 2012 - July 2013  
 Built RESTful APIs for e-commerce platform enabling partner integration with order placement and product purchasing systems.
+**Technologies:** Java, Spring Framework, REST APIs, Hibernate, Cucumber, BDD, Maven
 
-**Additional Experience:** C++/Java Programmer at AutoZone (2011-2012) | Systems Analyst/Programmer at Labinal de Mexico (2008-2010)
+**Additional Experience:** 
+- **C++/Java Programmer** at AutoZone (2011-2012) | **Technologies:** Java, Spring, C++, QT Framework
+- **Systems Analyst/Programmer** at Labinal de Mexico (2008-2010) | **Technologies:** Java EE, C#, .NET
 
 ## Freelance Experience
 
@@ -112,3 +117,5 @@ Chihuahua's Institute of Technology No. II (ITCH II), Chihuahua, Mexico
 **DevOps & Testing:** CI/CD, Jenkins, Bamboo, Maven, Gradle, Git, JUnit, Mockito, TDD/BDD
 
 **Programming Languages:** Java, Kotlin, TypeScript, JavaScript, Python, Swift, SQL
+
+**Currently Learning:** Rust, Embedded Systems & RTIC

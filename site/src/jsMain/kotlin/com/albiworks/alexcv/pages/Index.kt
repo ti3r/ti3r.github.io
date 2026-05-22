@@ -347,6 +347,9 @@ fun HomePage() {
                         Text(Strings.autoZoneTitle[language].orEmpty())
                     }
                     P { Text(Strings.autoZoneDescription[language].orEmpty()) }
+                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) {
+                        Text("${Strings.technologies[language].orEmpty()} Java, Spring, C++, QT Framework")
+                    }
                 }
 
                 Div {
@@ -354,6 +357,9 @@ fun HomePage() {
                         Text(Strings.labinalTitle[language].orEmpty())
                     }
                     P { Text(Strings.labinalDescription[language].orEmpty()) }
+                    P(Modifier.fontStyle(FontStyle.Italic).fontSize(0.9.cssRem).margin(top = 0.5.cssRem).toAttrs()) {
+                        Text("${Strings.technologies[language].orEmpty()} Java EE, C#, .NET")
+                    }
                 }
             }
         }
